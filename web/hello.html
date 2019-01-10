@@ -3,7 +3,9 @@
     <head>
         <title>Hello World</title>
         <script type="text/javascript">
-            
+            function changewords() {
+                document.getElementById("change").innerHTML = "Hello Young Peak"
+            };
         </script>
         <style>
             body {
@@ -11,18 +13,20 @@
                 margin: 0;
                 padding: 0;               
             }
+
             .hello {
                 background-color: grey;
                 box-shadow: 0 4px 8px 0 black;
+                padding: 15px;
+                margin: 0;
+                font-size: 200px;
             }
 
         </style>
     </head>
     <body>
         <div class="hello">
-            <?php
-                echo "Hello World!";
-            ?>
+            <p id="change" onclick="changewords()">Hello World</p>
         </div>
     </body>
 </html>
