@@ -4,7 +4,12 @@
         <title>Hello World</title>
         <script type="text/javascript">
             function changewords() {
-                document.getElementById("change").innerHTML = "Hello Young Peak"
+                if (document.getElementById("change").innerHTML === "Hello World"){
+                    document.getElementById("change").innerHTML = "Hello Young Peak";
+                }else{
+                    document.getElementById("change").innerHTML = "Hello World";
+                };
+                
             };
         </script>
         <style>
