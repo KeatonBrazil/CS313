@@ -18,11 +18,14 @@ header {
     background-color: black;
 }
 
-a {
+.element {
     text-decoration: none;
     color: white;
+    margin:0;
+    padding: 15px;
 }
 
-a:hover {
+.element:hover {
+    
     background-color: rgb(59, 59, 59); 
 }
