@@ -5,8 +5,9 @@ body {
 }
 
 header {
-    background-image: linear-gradient(yellow, rgb(255, 187, 0));
+    background-image: linear-gradient(rgb(41, 165, 4), rgb(25, 95, 3));
     margin:0;
     padding: 15px;
     text-align: center;
+    box-shadow: 0 4px 8px 0 black;
 }
