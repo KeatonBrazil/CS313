@@ -16,6 +16,7 @@ header {
     margin: 0;
     padding: 10px;
     background-color: black;
+    box-shadow: 0 4px 8px 0 black;
 }
 
 .element {
