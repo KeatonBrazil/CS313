@@ -17,6 +17,8 @@
             </h1>
         </header>
     </div>
-    
+    <div id="navbar">
+        <a href="">Assignments</a>
+    </div>
 </body>
 </html>

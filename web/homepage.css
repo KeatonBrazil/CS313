@@ -11,3 +11,14 @@ header {
     text-align: center;
     box-shadow: 0 4px 8px 0 black;
 }
+
+#navbar {
+    margin: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
