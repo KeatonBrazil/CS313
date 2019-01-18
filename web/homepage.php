@@ -10,7 +10,13 @@
     </script>
 </head>
 <body>
-    <p>My Homepage</p>
+    <div>
+        <header>
+            <h1>
+                My Home Page
+            </h1>
+        </header>
+    </div>
     
 </body>
 </html>

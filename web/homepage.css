@@ -1,3 +1,11 @@
 body {
-    background: red;
+    background-color: dimgrey;
+    margin: 0;
+    padding:0;
+}
+
+header {
+    background-image: linear-gradient(yellow, rgb(255, 187, 0));
+    margin:0;
+    padding: 15;
 }
