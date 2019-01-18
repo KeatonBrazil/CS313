@@ -19,7 +19,9 @@
     </div>
     <div id="navbar">
             <a class="element" href="">Assignments</a>
-        
+    </div>
+    <div>
+        <img src="me.jpg" alt="A professional photograph of Keaton Sant">
     </div>
 </body>
 </html>
