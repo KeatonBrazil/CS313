@@ -9,7 +9,7 @@ header {
     background-image: linear-gradient(rgb(75, 130, 175), rgb(33, 57, 77));
     margin:0;
     padding: 15px;
-    font-size: 3vw;
+    font-size: 200%;
     text-align: center;
     box-shadow: 0 4px 8px 0 black;
 }
@@ -97,6 +97,9 @@ hr {
     .info_title {
         font-size: 80%;
     }
+    header {
+        font-size: 100%;
+    }
 }
 
 /*iphone X*/
@@ -107,6 +110,9 @@ hr {
     .info_title {
         font-size: 80%;
     }
+    header {
+        font-size: 100%;
+    }
 }
 
 @media only screen and (min-device-width : 813px) and (max-width: 935px) {
@@ -116,5 +122,8 @@ hr {
     
     #me {
         width: 95%;
+    }
+    header {
+        font-size: 150%;
     }
 }
