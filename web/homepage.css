@@ -5,6 +5,7 @@ body {
 }
 
 header {
+    flex-wrap:wrap;
     background-image: linear-gradient(rgb(41, 165, 4), rgb(25, 95, 3));
     margin:0;
     padding: 15px;
@@ -33,7 +34,7 @@ header {
 #me {
     margin:15px;
     float: left;
-    width: 200px;
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 8px 0 black;
 }
