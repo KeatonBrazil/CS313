@@ -55,9 +55,9 @@
         </div>  
     </div>
     <div class="graph_container">
-        <div id="a"></div>
-        <div id="b"></div>
-        <div id="c"></div>
+        <div id="a" class="place"></div>
+        <div id="b" class="place"></div>
+        <div id="c" class="place"></div>
     </div>
     <div>
         <footer>
