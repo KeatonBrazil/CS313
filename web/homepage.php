@@ -28,10 +28,16 @@
             <div class="sub_container">
                 <div class="info info_title"><h1>Keaton Sant</h1></div>
                 <hr>
-                <div class="info"></div>
+                <div class="info info_text">
+
+                </div>
             </div>
         </div>  
     </div>
-
+    <div>
+        <footer>
+            <p>&copy; 2019 Keaton Sant</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -89,6 +89,14 @@ hr {
     background-color: black;
 }
 
+footer {
+    box-shadow: 8px 4px 0 0 black;
+    background-image: linear-gradient(rgb(33, 57, 77), rgb(75, 130, 175));
+    margin: 0;
+    padding: 10;
+    text-align: center;
+}
+
 /*iphone 5 and 5s and iphone 6, 7, 8*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 736px) {
     .container {
