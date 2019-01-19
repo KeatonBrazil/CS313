@@ -120,6 +120,10 @@ hr {
 #graph_title {
     text-align: center;
     font-size: 150%;
+    margin: 10px;
+    padding: 10px;
+    background-color:rgb(224, 189, 143);
+    box-shadow: 0 4px 8px 0 rgb(53, 43, 31);
 }
 
 .space {
