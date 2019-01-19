@@ -30,7 +30,7 @@
                 <hr>
                 <div class="info info_text">
                     <p>
-                        I am a Data Scientist at heart. 
+                        I am a <b>Data Scientist</b> at heart. 
                         I am currently studying at BYU-Idaho.
                         When a great set of data is set in front of me
                         I can't resist the urge to shuffle through it and 
