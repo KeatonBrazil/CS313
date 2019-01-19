@@ -29,7 +29,20 @@
                 <div class="info info_title"><h1>Keaton Sant</h1></div>
                 <hr>
                 <div class="info info_text">
-
+                    <p>
+                        I am a Data Scientist at heart. 
+                        I am currently studying at BYU-Idaho.
+                        When a great set of data is set in front of me
+                        I can't resist the urge to shuffle through it and 
+                        create visualizations that best represent the marvels
+                        concealed inside the data. Even when a chaotic data set 
+                        is presented to me I feel confident in tidying the data and 
+                        molding it to be a tool for uncovering it's own mysteries.
+                        As I have progressed in this field,
+                        I have found an interest in computer science and a love for coding.
+                        
+                    </p>
+                    
                 </div>
             </div>
         </div>  
