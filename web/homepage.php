@@ -17,15 +17,16 @@
             </h1>
         </header>
     </div>
-    <div id="navbar">
+    <div id="navbar" class="sticky">
             <a class="element" href="">Assignments</a>
     </div>
-    <div>
-        <div>
+    <div class="container">
+        <div class="item_left">
             <img id="me" src="me.jpg" alt="A professional photograph of Keaton Sant">
         </div>
-        <div id="myname">
-            <p>hello my name is keaton and I would like to make your day</p>
+        <div class="item_right">
+            <div></div>
+            <div></div>
         </div>  
     </div>
 

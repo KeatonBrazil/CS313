@@ -21,6 +21,12 @@ header {
     box-shadow: 0 4px 8px 0 black;
 }
 
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
 .element {
     text-decoration: none;
     color: white;
@@ -42,8 +48,11 @@ header {
     box-shadow: 0 4px 8px 0 black;
 }
 
-#myname {
-    width:40%;
-    float: right;
-    background-color: white;
+.container {
+    display: flex;
 }
+
+.item {
+
+}
+
