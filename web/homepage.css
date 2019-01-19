@@ -62,3 +62,8 @@ header {
     flex: 70%;
 }
 
+.info {
+    margin:15px;
+    padding:15px;
+    background-color:yellow;
+}
