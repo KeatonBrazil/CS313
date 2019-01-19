@@ -70,7 +70,22 @@ header {
 .info {
     margin:15px;
     padding:15px;
-    background-color:yellow;
+    background-color:rgb(255, 187, 0);
     box-shadow: 0 4px 8px 0 rgb(71, 71, 1);
-    font-size: 4vw;
+    font-size: ;
+}
+
+/*iphone 5 and 5s*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+}
+
+/*iphone 6, 7, 8*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+
+}
+
+/*iphone X*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px)and (-webkit-device-pixel-ratio : 3) {
+
 }
