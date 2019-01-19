@@ -37,6 +37,8 @@
     <div>
         <footer>
             <p>&copy; 2019 Keaton Sant</p>
+            <p>This webpage was designed to easily navigate through<br> 
+                my assignments in Web Engineering 2 at BYU-I.</p>
         </footer>
     </div>
 </body>
