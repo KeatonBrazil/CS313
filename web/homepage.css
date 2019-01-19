@@ -55,7 +55,7 @@ header {
 }
 
 .data:hover {
-    font-size: 110%;
+    font-size: 90%;
 }
 
 .container {
@@ -106,8 +106,8 @@ hr {
 }
 
 .graph {
-    margin: 10px;
-    width: 50%;
+    margin: 0;
+    width: 80%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgb(32, 32, 32);
 }
