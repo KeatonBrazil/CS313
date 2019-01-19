@@ -28,6 +28,7 @@ header {
 }
 
 .element {
+    font-size: 2vw;
     text-decoration: none;
     color: white;
     margin:0;
@@ -63,7 +64,7 @@ header {
 }
 
 .sub_container {
-
+    
 }
 
 .info {
