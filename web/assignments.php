@@ -19,5 +19,8 @@
             </h1>
         </header>
     </div>
+    <div id="navbar" class="sticky">
+            <a class="element" href="homepage.php">Home</a>
+    </div>
 </body>
 </html>
