@@ -93,7 +93,7 @@ footer {
     box-shadow: 0 4px 8px 0 black;
     background-image: linear-gradient(rgb(33, 57, 77), rgb(75, 130, 175));
     margin: 0;
-    padding: 10;
+    padding: 10px;
     text-align: center;
 }
 
