@@ -103,7 +103,6 @@ hr {
     display: flex;
     flex: 100%;
     flex-wrap: wrap;
-    justify-content: center;
     flex-direction: column;
     margin:10px;
     padding: 10px;
@@ -111,14 +110,15 @@ hr {
 }
 
 .graph {
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
     height: auto;
     box-shadow: 0 4px 8px 0 rgb(32, 32, 32);
 }
 
 .space {
-    margin: 0;
+    margin-left: 0;
     padding: 0;
 }
 
