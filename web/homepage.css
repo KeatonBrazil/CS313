@@ -81,7 +81,7 @@ header {
 }
 
 .info_text {
-    font-size: 120%;
+    font-size: 130%;
 }
 
 hr {
@@ -105,6 +105,9 @@ footer {
     .info_title {
         font-size: 70%;
     }
+    .info_text {
+        font-size: 100%;
+    }
     header {
         font-size: 80%;
     }
@@ -118,6 +121,9 @@ footer {
     .info_title {
         font-size: 70%;
     }
+    .info_text {
+        font-size: 100%;
+    }
     header {
         font-size: 80%;
     }
@@ -127,11 +133,14 @@ footer {
     .info_title {
         font-size: 80%;
     }
-    
+    .info_text {
+        font-size: 80%
+    }
     #me {
         width: 95%;
     }
     header {
         font-size: 150%;
     }
+
 }
