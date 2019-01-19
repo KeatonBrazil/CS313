@@ -77,6 +77,11 @@ header {
 
 .info_title {
     text-align: center;
+    font-size: 250%;
+}
+
+.info_text {
+
 }
 
 hr {
