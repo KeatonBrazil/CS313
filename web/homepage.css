@@ -117,6 +117,11 @@ hr {
     position: block;
 }
 
+#graph_title {
+    text-align: center;
+    font-size: 150%;
+}
+
 .space {
     margin: 0;
     padding: 0;
@@ -143,6 +148,9 @@ footer {
     .info_text {
         font-size: 100%;
     }
+    #graph_title {
+        font-size: 70%;
+    }
     header {
         font-size: 80%;
     }
@@ -162,6 +170,9 @@ footer {
     .info_text {
         font-size: 100%;
     }
+    #graph_title {
+        font-size: 70%;
+    }
     header {
         font-size: 80%;
     }
@@ -176,6 +187,9 @@ footer {
     }
     .info_text {
         font-size: 80%
+    }
+    #graph_title {
+        font-size: 80%;
     }
     #me {
         width: 95%;

@@ -55,6 +55,7 @@
         </div>  
     </div>
     <div class="graph_container">
+        <div><h2 id="graph_title"></h2></div>
         <div id="a" class="space"></div>
         <div id="b" class="space"></div>
         <div id="c" class="space"></div>
