@@ -21,7 +21,12 @@
             <a class="element" href="">Assignments</a>
     </div>
     <div>
-        <img id="me" src="me.jpg" alt="A professional photograph of Keaton Sant">
+        <div>
+            <img id="me" src="me.jpg" alt="A professional photograph of Keaton Sant">
+        </div>
+        <div>
+            <p>hello</p>
+        </div>  
     </div>
 
 </body>
