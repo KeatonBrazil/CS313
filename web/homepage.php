@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script>
         function ShowGraph() {
-            document.getElementByID("a").innerHTML = "<img src='unnamed-chunk-3-1.png'>";
-            document.getElementByID("b").innerHTML = "<img src='unnamed-chunk-4-1.png'>";
-            document.getElementByID("c").innerHTML = "<img src='unnamed-chunk-5-1.png'>";            
+            document.getElementByID("a").innerHTML = "Hello";
+            document.getElementByID("b").innerHTML = "Hello";
+            document.getElementByID("c").innerHTML = "hello";            
         };
     </script>
 </head>
