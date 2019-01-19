@@ -21,7 +21,8 @@
             <a class="element" href="">Assignments</a>
     </div>
     <div>
-        <img src="me.jpg" alt="A professional photograph of Keaton Sant">
+        <img style="width:50%; height:auto;" src="me.jpg" alt="A professional photograph of Keaton Sant">
     </div>
+
 </body>
 </html>
