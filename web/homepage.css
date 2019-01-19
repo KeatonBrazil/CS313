@@ -6,7 +6,7 @@ body {
 
 header {
     flex-wrap:wrap;
-    background-image: linear-gradient(rgb(41, 165, 4), rgb(25, 95, 3));
+    background-image: linear-gradient(rgb(75, 130, 175), rgb(56, 96, 129));
     margin:0;
     padding: 15px;
     font-size: 3vw;
