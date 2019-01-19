@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script type="text/javascript">
+        function ShowGraph() {
+            var doc = document.getElementByID("");
+
+        }
     </script>
 </head>
 <body>
@@ -32,7 +36,7 @@
                 <hr>
                 <div class="info info_text">
                     <p>
-                        I am a <button class="data"><b>Data Scientist</b></button> at heart. 
+                        I am a <button class="data" onclick=""><b>Data Scientist</b></button> at heart. 
                         I am currently studying at BYU-Idaho.
                         When a great set of data is set in front of me
                         I can't resist the urge to shuffle through it and 
@@ -48,6 +52,11 @@
                 </div>
             </div>
         </div>  
+    </div>
+    <div class="graph_container">
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
     </div>
     <div>
         <footer>
