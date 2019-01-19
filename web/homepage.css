@@ -75,6 +75,11 @@ header {
 
 }
 
+hr {
+    border-style: solid;
+    background-color: black;
+}
+
 /*iphone 5 and 5s*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
