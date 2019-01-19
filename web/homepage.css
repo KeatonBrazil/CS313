@@ -142,5 +142,8 @@ footer {
     header {
         font-size: 150%;
     }
+    footer {
+        font-size: 60;
+    }
 
 }

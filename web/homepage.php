@@ -49,10 +49,10 @@
     </div>
     <div>
         <footer>
-            <p>&copy; 2019 Keaton Sant</p>
             <p>This webpage was designed to introduce myself<br>
             and to provide a link to my assignments<br> 
             in Web Engineering 2 at BYU-I.</p>
+            <p><b>&copy; 2019 Keaton Sant<b></p>
         </footer>
     </div>
 </body>
