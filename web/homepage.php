@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script>
         function ShowGraph() {
+            alert("hello");
             document.getElementByID("a").innerHTML = "Hello";
             document.getElementByID("b").innerHTML = "Hello";
             document.getElementByID("c").innerHTML = "hello";            
@@ -55,9 +56,9 @@
         </div>  
     </div>
     <div class="graph_container">
-        <div id="a"></div>
-        <div id="b"></div>
-        <div id="c"></div>
+        <div id="a">help</div>
+        <div id="b">help</div>
+        <div id="c">help</div>
     </div>
     <div>
         <footer>
