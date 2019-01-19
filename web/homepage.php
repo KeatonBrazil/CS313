@@ -55,7 +55,7 @@
         </div>  
     </div>
     <div class="graph_container">
-        <div><h2 id="graph_title"></h2></div>
+        <div><h2 id="graph_title">These graphs are an example of what I was able to do with the data from boardgamegeek.com</h2></div>
         <div id="a" class="space"></div>
         <div id="b" class="space"></div>
         <div id="c" class="space"></div>
