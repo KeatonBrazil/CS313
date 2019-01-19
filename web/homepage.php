@@ -6,15 +6,12 @@
     <title>Home | Keaton Sant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
-    <script type="text/javascript">
+    <script>
         function ShowGraph() {
-            var doca = document.getElementByID("a");
-            var docb = document.getElementByID("b");
-            var docc = document.getElementByID("c");
-            
-            doca.innerHTML = "<img src='unnamed-chunk-3-1.png'>";
-            
-        }
+            document.getElementByID("a").innerHTML = "<img src='unnamed-chunk-3-1.png'>";
+            document.getElementByID("b").innerHTML = "<img src='unnamed-chunk-4-1.png'>";
+            document.getElementByID("c").innerHTML = "<img src='unnamed-chunk-5-1.png'>";            
+        };
     </script>
 </head>
 <body>
