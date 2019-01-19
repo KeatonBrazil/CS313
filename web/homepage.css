@@ -51,7 +51,7 @@ header {
 .data {
     border-style: none;
     box-shadow: 0 4px 8px 0 rgb(53, 43, 31);
-    background-image: linear-gradient(rgb(33, 57, 77), rgb(75, 130, 175))
+    background-image: linear-gradient(rgb(75, 130, 175), rgb(33, 57, 77))
 }
 
 .container {
