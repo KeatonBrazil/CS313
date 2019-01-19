@@ -43,5 +43,7 @@ header {
 }
 
 #myname {
+    width:40%;
+    float: right;
     background-color: white;
 }
