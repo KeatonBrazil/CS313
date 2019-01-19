@@ -28,7 +28,8 @@ header {
 }
 
 .element:hover {
-    background-color: rgb(59, 59, 59); 
+    background-color: rgb(247, 247, 247); 
+    color: black;
 }
 
 #me {
