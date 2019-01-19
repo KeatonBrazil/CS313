@@ -25,7 +25,7 @@
             <img id="me" src="me.jpg" alt="A professional photograph of Keaton Sant">
         </div>
         <div class="item_right">
-            <div class="info">Keaton Sant</div>
+            <div class="info"><h1>Keaton Sant</h1></div>
             <div class="info"></div>
         </div>  
     </div>
