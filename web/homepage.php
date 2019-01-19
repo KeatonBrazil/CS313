@@ -27,6 +27,7 @@
         <div class="item_right">
             <div class="sub_container">
                 <div class="info"><h1>Keaton Sant</h1></div>
+                <hr>
                 <div class="info"></div>
             </div>
         </div>  
