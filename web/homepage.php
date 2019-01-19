@@ -13,7 +13,9 @@
     <div>
         <header>
             <h1>
-                My Home Page
+                <?php
+                    include 'header.php';
+                ?>
             </h1>
         </header>
     </div>
