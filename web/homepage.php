@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script>
         function ShowGraph() {
-            
-            document.getElementById("a").innerHTML = "<img src='unnamed-chunk-3-1.png'>";
-            document.getElementById("b").innerHTML = "<img src='unnamed-chunk-4-1.png'>";
-            document.getElementById("c").innerHTML = "<img src='unnamed-chunk-5-1.png'>";            
+            document.getElementById("a").innerHTML = "<img class='graph' src='unnamed-chunk-3-1.png'>";
+            document.getElementById("b").innerHTML = "<img class='graph' src='unnamed-chunk-4-1.png'>";
+            document.getElementById("c").innerHTML = "<img class='graph' src='unnamed-chunk-5-1.png'>";            
         };
     </script>
 </head>
@@ -56,9 +55,9 @@
         </div>  
     </div>
     <div class="graph_container">
-        <div id="a">help</div>
-        <div id="b">help</div>
-        <div id="c">help</div>
+        <div id="a"></div>
+        <div id="b"></div>
+        <div id="c"></div>
     </div>
     <div>
         <footer>

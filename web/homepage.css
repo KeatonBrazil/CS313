@@ -54,6 +54,10 @@ header {
     background-image: linear-gradient(rgb(75, 130, 175), rgb(33, 57, 77))
 }
 
+.data:hover {
+    font-size: 120%;
+}
+
 .container {
     display: flex;
     flex: 100%;
