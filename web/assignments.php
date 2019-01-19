@@ -22,5 +22,12 @@
     <div id="navbar" class="sticky">
             <a class="element" href="homepage.php">Home</a>
     </div>
+    <div class="sub_container">
+        <div class="info info_title">
+            <h1>
+                Assignments... Coming Soon
+            </h1>
+        </div>
+    </div>
 </body>
 </html>
