@@ -8,8 +8,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script type="text/javascript">
         function ShowGraph() {
-            var doc = document.getElementByID("");
-
+            var doca = document.getElementByID("a");
+            var docb = document.getElementByID("b");
+            var docc = document.getElementByID("c");
+            
+            doca.innerHTML = "<img src='unnamed-chunk-3-1.png'>"
+            
         }
     </script>
 </head>
@@ -36,7 +40,7 @@
                 <hr>
                 <div class="info info_text">
                     <p>
-                        I am a <button class="data" onclick=""><b>Data Scientist</b></button> at heart. 
+                        I am a <button class="data" onclick="ShowGraph()"><b>Data Scientist</b></button> at heart. 
                         I am currently studying at BYU-Idaho.
                         When a great set of data is set in front of me
                         I can't resist the urge to shuffle through it and 
