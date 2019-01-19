@@ -12,7 +12,7 @@
             var docb = document.getElementByID("b");
             var docc = document.getElementByID("c");
             
-            doca.innerHTML = "<img src='unnamed-chunk-3-1.png'>"
+            doca.innerHTML = "<img src='unnamed-chunk-3-1.png'>";
             
         }
     </script>
