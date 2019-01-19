@@ -24,8 +24,8 @@
         <div>
             <img id="me" src="me.jpg" alt="A professional photograph of Keaton Sant">
         </div>
-        <div>
-            <p>hello</p>
+        <div id="myname">
+            <p>hello my name is keaton and I would like to make your day</p>
         </div>  
     </div>
 
