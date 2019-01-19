@@ -9,9 +9,9 @@
     <script>
         function ShowGraph() {
             alert("hello");
-            document.getElementByID("a").innerHTML = "Hello";
-            document.getElementByID("b").innerHTML = "Hello";
-            document.getElementByID("c").innerHTML = "hello";            
+            document.getElementById("a").innerHTML = "Hello";
+            document.getElementById("b").innerHTML = "Hello";
+            document.getElementById("c").innerHTML = "hello";            
         };
     </script>
 </head>
