@@ -29,6 +29,7 @@ header {
 }
 
 .element:hover {
+    box-shadow: 0 4px 8px 0 black;
     background-color: rgb(131, 131, 131); 
     color: black;
 }
