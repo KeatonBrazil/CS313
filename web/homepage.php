@@ -18,7 +18,7 @@
         </header>
     </div>
     <div id="navbar" class="sticky">
-            <a class="element" href="">Assignments</a>
+            <a class="element" href="assignments.php">Assignments</a>
     </div>
     <div class="container">
         <div class="item_left">
