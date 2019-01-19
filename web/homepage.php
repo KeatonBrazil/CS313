@@ -8,10 +8,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
     <script>
         function ShowGraph() {
-            alert("hello");
-            document.getElementById("a").innerHTML = "Hello";
-            document.getElementById("b").innerHTML = "Hello";
-            document.getElementById("c").innerHTML = "hello";            
+            
+            document.getElementById("a").innerHTML = "<img src='unnamed-chunk-3-1.png'>";
+            document.getElementById("b").innerHTML = "<img src='unnamed-chunk-4-1.png'>";
+            document.getElementById("c").innerHTML = "<img src='unnamed-chunk-5-1.png'>";            
         };
     </script>
 </head>
