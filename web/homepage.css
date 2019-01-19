@@ -27,6 +27,11 @@ header {
 }
 
 .element:hover {
-    
     background-color: rgb(59, 59, 59); 
+}
+
+#me {
+    width: 400px;
+    height: auto;
+    box-shadow: 0 4px 8px 0 black;
 }
