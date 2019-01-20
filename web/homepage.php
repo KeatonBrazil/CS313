@@ -11,7 +11,7 @@
             document.getElementById("a").innerHTML = "<img class='graph' src='unnamed-chunk-3-1.png'>";
             document.getElementById("b").innerHTML = "<img class='graph' src='unnamed-chunk-4-1.png'>";
             document.getElementById("c").innerHTML = "<img class='graph' src='unnamed-chunk-5-1.png'>";
-            document.getElementById("graph_title").innerHTML = "These graphs are an example of what I was able to do with the data from boardgamegeek.com";
+            document.getElementById("graph_title").innerHTML = "<h2>These graphs are an example of what I was able to do with the data from boardgamegeek.com</h2>";
             document.getElementById("graph_title").focus();
 
         };
@@ -58,7 +58,7 @@
         </div>  
     </div>
     <div class="graph_container">
-        <div><h2 id="graph_title"></h2></div>
+        <div id="graph_title"></div>
         <div id="a" class="space"></div>
         <div id="b" class="space"></div>
         <div id="c" class="space"></div>
