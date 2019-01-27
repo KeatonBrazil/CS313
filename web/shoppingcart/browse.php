@@ -28,7 +28,7 @@ $_SESSION['cart'] = array();
             <form name="form1" action="add.php" method="get">
                 <div>
                     <h1>Item 1</h1>
-                    <input type="submit" value="item1" name="item1">
+                    <input type="submit" value="item1" name="product[]">
                 </div>
             </form>
         </div>
@@ -36,7 +36,7 @@ $_SESSION['cart'] = array();
             <form name="form2" action="add.php" method="get">
                 <div>
                     <h1>Item 3</h1>
-                    <input type="submit" value="item2" name="item2">
+                    <input type="submit" value="item2" name="product[]">
                 </div>
             </form>
         </div>
@@ -44,7 +44,7 @@ $_SESSION['cart'] = array();
             <form name="form3" action="add.php" method="get">
                 <div>
                     <h1>Item 3</h1>
-                    <input type="submit" value="item3" name="item3">
+                    <input type="submit" value="item3" name="product[]">
                 </div>
             </form>
         </div>
