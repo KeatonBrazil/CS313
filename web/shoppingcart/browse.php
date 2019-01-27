@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION["cart"] = array();
+$_SESSION['cart'] = array();
 
 
 
@@ -25,6 +25,12 @@ $_SESSION["cart"] = array();
     </div>
     <div>
         <div>
+            <form name="form1" action="add.php" method="get">
+                <div>
+                    <h1>Item 1</h1>
+                    <input type="submit" value="item1" name="item1">
+                </div>
+            </form>
         </div>
         <div>
         </div>
