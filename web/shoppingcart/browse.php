@@ -33,8 +33,20 @@ $_SESSION['cart'] = array();
             </form>
         </div>
         <div>
+            <form name="form2" action="add.php" method="get">
+                <div>
+                    <h1>Item 3</h1>
+                    <input type="submit" value="item2" name="item2">
+                </div>
+            </form>
         </div>
         <div>
+            <form name="form3" action="add.php" method="get">
+                <div>
+                    <h1>Item 3</h1>
+                    <input type="submit" value="item3" name="item3">
+                </div>
+            </form>
         </div>
     </div>
     
