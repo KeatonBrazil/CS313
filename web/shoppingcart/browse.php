@@ -1,9 +1,11 @@
 <?php
 session_start();
-$cart = $_SESSION["cart"] = array();
-var_dump($cart)
+$_SESSION["cart"] = array();
+
+
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,10 +19,19 @@ var_dump($cart)
 </head>
 <body>
     <div>
+        <header>
+            <h3>Shop Here</h3>
+        </header>
     </div>
     <div>
+        <div>
+        </div>
+        <div>
+        </div>
+        <div>
+        </div>
     </div>
-    <div></div>
+    
     
 </body>
 </html>
