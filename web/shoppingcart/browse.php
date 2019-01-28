@@ -27,27 +27,27 @@ if (!isset($_SESSION['cart'])) {
         <div>
             <form name="form1" action="add.php" method="post">
                 <div>
-                    <h1>Item 1</h1>
-                    <input type="hidden" value="10" name="price">
-                    <input type="submit" value="item1" name="product">
+                    <h1>Squirtle</h1>
+                    <input type="hidden" value="7000" name="price">
+                    <input type="submit" value="Squirtle" name="product">
                 </div>
             </form>
         </div>
         <div>
             <form name="form2" action="add.php" method="post">
                 <div>
-                    <h1>Item 3</h1>
-                    <input type="hidden" value="10" name="price">
-                    <input type="submit" value="item2" name="product">
+                    <h1>Pikachu</h1>
+                    <input type="hidden" value="5000" name="price">
+                    <input type="submit" value="Pikachu" name="product">
                 </div>
             </form>
         </div>
         <div>
             <form name="form3" action="add.php" method="post">
                 <div>
-                    <h1>Item 3</h1>
-                    <input type="hidden" value="10" name="price">
-                    <input type="submit" value="item3" name="product">
+                    <h1>Charmander</h1>
+                    <input type="hidden" value="10000" name="price">
+                    <input type="submit" value="Charmander" name="product">
                 </div>
             </form>
         </div>
