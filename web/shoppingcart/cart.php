@@ -10,6 +10,6 @@
     </script>
 </head>
 <body>
-<input type="submit" value=""
+<input type="submit" value="">
 </body>
 </html>
