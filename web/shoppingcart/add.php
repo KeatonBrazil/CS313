@@ -1,6 +1,9 @@
 <?php
 session_start();
-$_SESSION['cart'][] = $_GET["product"];
-var_dump($_SESSION['cart']);
+if (isset($_POST["product"])) {
+    array_push($_SESSION['cart'], $_POST["product"]);
+    var_dump($_SESSION['cart']);
+};
+
 ?>
 <a href="browse.php">browse</a>

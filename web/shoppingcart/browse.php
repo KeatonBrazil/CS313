@@ -25,26 +25,26 @@ $_SESSION['cart'] = array();
     </div>
     <div>
         <div>
-            <form name="form1" action="add.php" method="get">
+            <form name="form1" action="add.php" method="post">
                 <div>
                     <h1>Item 1</h1>
-                    <input type="submit" value="item1" name="product[]">
+                    <input type="submit" value="item1" name="product">
                 </div>
             </form>
         </div>
         <div>
-            <form name="form2" action="add.php" method="get">
+            <form name="form2" action="add.php" method="post">
                 <div>
                     <h1>Item 3</h1>
-                    <input type="submit" value="item2" name="product[]">
+                    <input type="submit" value="item2" name="product">
                 </div>
             </form>
         </div>
         <div>
-            <form name="form3" action="add.php" method="get">
+            <form name="form3" action="add.php" method="post">
                 <div>
                     <h1>Item 3</h1>
-                    <input type="submit" value="item3" name="product[]">
+                    <input type="submit" value="item3" name="product">
                 </div>
             </form>
         </div>
