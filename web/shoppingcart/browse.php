@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
-vardump($_SESSION['cart']);
+
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +52,9 @@ vardump($_SESSION['cart']);
             </form>
         </div>
     </div>
+    <?php
+    var_dump($_SESSION['cart']);
+    ?>
     
     
 </body>
