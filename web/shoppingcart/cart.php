@@ -17,9 +17,14 @@ session_start()
 <a href="browse.php">browse</a>
     <?php 
         for ($i=0; $i <= sizeof($_SESSION['cart']); $i++) {
+            $index = $i
             echo "<div>";
-            echo $_SESSION['cart'][$i][0];
-            echo $_SESSION['cart'][$i][1];
+            echo "<form>";
+            echo $_SESSION['cart'][$i][0] . "<br>";
+            echo "Price: $" . $_SESSION['cart'][$i][1];
+            echo "<input type='hidden' name='" . $index . "'>";
+            echo "<input type='submit'>";
+            echo "</form>";
             echo "</div>";
         }        
     ?>
