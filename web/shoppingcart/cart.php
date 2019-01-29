@@ -20,7 +20,7 @@ session_start()
             echo "<div>";
             echo $_SESSION['cart'][$i][0];
             echo $_SESSION['cart'][$i][1];
-            echo "</div>"
+            echo "</div>";
         }        
     ?>
 </body>
