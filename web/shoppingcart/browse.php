@@ -52,9 +52,7 @@ if (!isset($_SESSION['cart'])) {
             </form>
         </div>
     </div>
-    <?php
-    var_dump($_SESSION['cart']);
-    ?>
+    <a href="cart.php"></a>
     
     
 </body>

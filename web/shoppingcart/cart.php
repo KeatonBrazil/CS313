@@ -1,3 +1,7 @@
+<?php
+session_start()
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +14,14 @@
     </script>
 </head>
 <body>
-<input type="submit" value="">
+<a href="browse.php"></a>
+    <?php 
+        for ($i=0; $i <= sizeof($_SESSION['cart']); $i++) {
+            echo "<div>";
+            echo $_SESSION['cart'][$i][0];
+            echo $_SESSION['cart'][$i][1];
+            echo "</div>"
+        }        
+    ?>
 </body>
 </html>
