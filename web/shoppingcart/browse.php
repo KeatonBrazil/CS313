@@ -24,6 +24,11 @@ if (!isset($_SESSION['cart'])) {
         </header>
     </div>
     <div>
+        <?php
+            echo "<h4>" . sizeof($_SESSION]['cart'])-1 ."</h4>";
+        ?>
+    </div>
+    <div>
         <div>
             <form name="form1" action="add.php" method="post">
                 <div>
