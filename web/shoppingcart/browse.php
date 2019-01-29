@@ -52,7 +52,7 @@ if (!isset($_SESSION['cart'])) {
             </form>
         </div>
     </div>
-    <a href="cart.php"></a>
+    <a href="cart.php">cart</a>
     
     
 </body>

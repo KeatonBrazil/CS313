@@ -14,7 +14,7 @@ session_start()
     </script>
 </head>
 <body>
-<a href="browse.php"></a>
+<a href="browse.php">browse</a>
     <?php 
         for ($i=0; $i <= sizeof($_SESSION['cart']); $i++) {
             echo "<div>";
