@@ -17,7 +17,7 @@ session_start()
 <a href="browse.php">browse</a>
     <?php 
         for ($i=0; $i <= sizeof($_SESSION['cart']); $i++) {
-            $index = $i
+            $index = $i;
             echo "<div>";
             echo "<form>";
             echo $_SESSION['cart'][$i][0] . "<br>";
