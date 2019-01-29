@@ -3,7 +3,6 @@ session_start();
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +24,7 @@ if (!isset($_SESSION['cart'])) {
     </div>
     <div>
         <?php
-            echo "<h4>" . sizeof($_SESSION['cart']) . "</h4>";
+            echo "<h4>You have" . sizeof($_SESSION['cart']) . " items in your cart.</h4>";
         ?>
     </div>
     <div>
