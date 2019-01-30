@@ -16,7 +16,7 @@ session_start()
 <body>
 <a href="browse.php">browse</a>
     <?php 
-        for ($i=0; $i <= sizeof($_SESSION['cart'])-1; $i++) {
+        for ($i=0; $i <= sizeof($_SESSION['cart']); $i++) {
             $index = $i;
             echo "<div>";
             echo "<form action='remove.php' method='post'>";
