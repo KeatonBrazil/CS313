@@ -19,10 +19,10 @@ session_start()
         for ($i=0; $i <= sizeof($_SESSION['cart'])-1; $i++) {
             $index = $i;
             echo "<div>";
-            echo "<form>";
+            echo "<form action='remove.php' method='post'>";
             echo $_SESSION['cart'][$i][0] . "<br>";
             echo "Price: $" . $_SESSION['cart'][$i][1];
-            echo "<input type='hidden' name='" . $index . "'>";
+            echo "<input type='hidden' name='item' value='" . $index . "'>";
             echo "<input type='submit' value='Remove'>";
             echo "</form>";
             echo "</div>";
