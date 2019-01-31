@@ -21,7 +21,7 @@ session_start()
             echo "<form action='remove.php' method='post'>";
             echo $_SESSION['cart'][$i][0] . "<br>";
             echo "Price: $" . $_SESSION['cart'][$i][1];
-            echo "<input type='hidden' name='product_index' value='$i'>"
+            echo "<input type='hidden' name='product_index' value='$i'>";
             echo "<input type='submit' value='Remove'>";            
             echo "</form>";
             echo "</div>";
