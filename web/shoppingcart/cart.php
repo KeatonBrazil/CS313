@@ -21,7 +21,7 @@ session_start()
     </div>
     <div id="navbar" class="sticky">
         <div>
-            <a href="browse.php">browse</a>
+            <a class="element" href="browse.php">browse</a>
         </div>        
     </div>
 
