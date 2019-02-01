@@ -31,7 +31,8 @@ if (!isset($_SESSION['cart'])) {
         <div>
             <form name="form1" action="add.php" method="post">
                 <div>
-                    <h1>Squirtle</h1>
+                    <h2>Squirtle</h2>
+                    <h3>$7000</h3>
                     <input type="hidden" value="7000" name="price">
                     <input type="hidden" value="Squirtle" name="product">
                     <input type="submit" value="Add">
@@ -41,7 +42,8 @@ if (!isset($_SESSION['cart'])) {
         <div>
             <form name="form2" action="add.php" method="post">
                 <div>
-                    <h1>Pikachu</h1>
+                    <h2>Pikachu</h2>
+                    <h3>$5000</h3>
                     <input type="hidden" value="5000" name="price">
                     <input type="hidden" value="Pikachu" name="product">
                     <input type="submit" value="Add">
@@ -51,7 +53,8 @@ if (!isset($_SESSION['cart'])) {
         <div>
             <form name="form3" action="add.php" method="post">
                 <div>
-                    <h1>Charmander</h1>
+                    <h2>Charmander</h2>
+                    <h3>$10000</h3>
                     <input type="hidden" value="10000" name="price">
                     <input type="hidden" value="Charmander" name="product">
                     <input type="submit" value="Add">

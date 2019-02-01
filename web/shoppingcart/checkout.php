@@ -9,6 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <div><h1>Checkout</h1></div>
     
 </body>
 </html>
