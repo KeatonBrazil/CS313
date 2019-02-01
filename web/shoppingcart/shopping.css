@@ -68,3 +68,21 @@ header {
 .item2 {
     flex: 50%;
 }
+
+#pikachu {
+    width: 80%;
+    height:auto;
+    float:right;
+}
+
+#charmander {
+    width: 80%;
+    height:auto;
+    float:right;
+}
+
+#squirtle {
+    width: 80%;
+    height:auto;
+    float:right;
+}
