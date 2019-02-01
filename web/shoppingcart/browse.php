@@ -42,7 +42,7 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$7000</h3>
                         </div>
                         <div class="item2">
-                            <img src="" alt="">
+                            <img src="squirtle.png" alt="picture of Squirtle">
                         </div>
                     </div>
                     <input type="hidden" value="7000" name="price">
@@ -60,7 +60,7 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$5000</h3>
                         </div>
                         <div class="item2">
-                            <img src="" alt="">
+                            <img src="pikachu.jpg" alt="picture of Pikachu">
                         </div>
                     </div>
                     <input type="hidden" value="5000" name="price">
@@ -78,7 +78,7 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$10000</h3>
                         </div>
                         <div class="item2">
-                            <img src="" alt="">
+                            <img src="charmander.png" alt="picture of Charmander">
                         </div>
                     </div>                    
                     <input type="hidden" value="10000" name="price">
