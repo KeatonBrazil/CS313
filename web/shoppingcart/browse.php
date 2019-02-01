@@ -23,8 +23,8 @@ if (!isset($_SESSION['cart'])) {
         </header>
     </div>
     <div>
-        <div>
-            <div id="navbar">
+        <div id="navbar">
+            <div>
                 <?php
                     echo sizeof($_SESSION['cart']) . " <a class='element' href='cart.php'>cart</a>";
                 ?>
