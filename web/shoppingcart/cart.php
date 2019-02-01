@@ -42,6 +42,7 @@ session_start()
             echo "</form>";
             echo "</div>";
         }        
+        var_dump($_SESSION['cart']);
     ?>
 </body>
 </html>
