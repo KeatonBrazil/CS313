@@ -47,6 +47,7 @@ if (!isset($_SESSION['cart'])) {
                     </div>
                     <input type="hidden" value="7000" name="price">
                     <input type="hidden" value="Squirtle" name="product">
+                    <input type="hidden" value="squirtle.png" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
@@ -65,6 +66,7 @@ if (!isset($_SESSION['cart'])) {
                     </div>
                     <input type="hidden" value="5000" name="price">
                     <input type="hidden" value="Pikachu" name="product">
+                    <input type="hidden" value="pikachu.jpg" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
@@ -83,6 +85,7 @@ if (!isset($_SESSION['cart'])) {
                     </div>                    
                     <input type="hidden" value="10000" name="price">
                     <input type="hidden" value="Charmander" name="product">
+                    <input type="hidden" value="charmander.png" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
