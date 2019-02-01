@@ -29,8 +29,14 @@ session_start()
         foreach ($_SESSION['cart'] as $i => $value) {
             echo "<div>";
             echo "<form class='cart_form' action='remove.php' method='post'>";
-            echo $_SESSION['cart'][$i][0] . "<br>";
-            echo "Price: $" . $_SESSION['cart'][$i][1];
+            echo "<div class='container'>";
+            echo "<div class='item1'>";
+            echo "<h2>" . $_SESSION['cart'][$i][0] . "</h2>";
+            echo "<h3>Price: $" . $_SESSION['cart'][$i][1] . "</h3>";
+            echo "</div>";
+            echo "<div class='item2'>";
+            echo "<img id='pokemon' src='" . $_SESSION['cart'][$i][3] ." alt='" . $_SESSION['cart'][$i][0] . "'>";
+            echo "</div>";            
             echo "<input type='hidden' name='product_index' value='$i'>";
             echo "<input type='submit' value='Remove'>";            
             echo "</form>";

@@ -42,11 +42,12 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$7000</h3>
                         </div>
                         <div class="item2">
-                            <img id="squirtle" src="squirtle.png" alt="picture of Squirtle">
+                            <img id="pokemon" src="squirtle.png" alt="picture of Squirtle">
                         </div>
                     </div>
                     <input type="hidden" value="7000" name="price">
                     <input type="hidden" value="Squirtle" name="product">
+                    <input type="hidden" value="squirtle.png" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
@@ -60,11 +61,12 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$5000</h3>
                         </div>
                         <div class="item2">
-                            <img id="pikachu" src="pikachu.jpg" alt="picture of Pikachu">
+                            <img id="pokemon" src="pikachu.jpg" alt="picture of Pikachu">
                         </div>
                     </div>
                     <input type="hidden" value="5000" name="price">
                     <input type="hidden" value="Pikachu" name="product">
+                    <input type="hidden" value="pikachu.jpg" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
@@ -78,11 +80,12 @@ if (!isset($_SESSION['cart'])) {
                             <h3>$10000</h3>
                         </div>
                         <div class="item2">
-                            <img id="charmander" src="charmander.png" alt="picture of Charmander">
+                            <img id="pokemon" src="charmander.png" alt="picture of Charmander">
                         </div>
                     </div>                    
                     <input type="hidden" value="10000" name="price">
                     <input type="hidden" value="Charmander" name="product">
+                    <input type="hidden" value="charmander.png" name="pokemon">
                     <input type="submit" value="Add">
                 </div>
             </form>
