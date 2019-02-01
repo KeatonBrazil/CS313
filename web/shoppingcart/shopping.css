@@ -11,7 +11,7 @@ a {
 header {
     padding: 15px;
     text-align: center;
-    background-color: white;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(66, 66, 66));
     box-shadow: 0 4px 8px 0 rgb(56, 0, 0); 
 }
 
@@ -20,6 +20,8 @@ header {
     box-shadow: 0 4px 8px 0 rgb(56, 0, 0);
     margin: 15px;
     padding: 15px;
+    border-color: black;
+    border-style: solid;
 }
 
 .checkout_form {
@@ -27,16 +29,16 @@ header {
 }
 
 #navbar {
-    background-color: rgb(53, 53, 53);
+    background-image: linear-gradient(rgb(66, 66, 66), rgb(34, 34, 34));
     text-align: right;
     box-shadow: 0 4px 8px 0 rgb(56, 0, 0);
     margin: 0;
-    padding: 5px;
+    padding: 2px;
+    color:white;
 }
 
 .element {
     text-decoration: none;
-    color: white;
     margin:0;
     padding: 10px;
 }

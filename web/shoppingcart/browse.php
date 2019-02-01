@@ -26,7 +26,7 @@ if (!isset($_SESSION['cart'])) {
         <div>
             <div id="navbar" class="sticky">
                 <?php
-                    echo "<h4>" . sizeof($_SESSION['cart']) . " items in your <a class='element' href='cart.php'>cart</a>.</h4>";
+                    echo "<h4>" . sizeof($_SESSION['cart']) . " <a class='element' href='cart.php'>cart</a>.</h4>";
                 ?>
             </div>
         </div>
