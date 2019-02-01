@@ -26,9 +26,6 @@ session_start()
     </div>
 
     <?php 
-        $pikachu = "pikachu.jpg"
-        $squirtle = "squirtle.png"
-        $charmander = "charmander.png"
         foreach ($_SESSION['cart'] as $i => $value) {
             echo "<div>";
             echo "<form class='cart_form' action='remove.php' method='post'>";
@@ -45,7 +42,6 @@ session_start()
             echo "</form>";
             echo "</div>";
         }        
-        var_dump($_SESSION['cart']);
     ?>
 </body>
 </html>
