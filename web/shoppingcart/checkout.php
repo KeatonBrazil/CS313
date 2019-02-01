@@ -9,7 +9,24 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div><h1>Checkout</h1></div>
+    <div>
+        <header>
+            <h1>Checkout</h1>
+        </header>
+    </div>
+    <div>
+        <form action="confirm.php" method="post">
+            <input type="text" placeholder="First Name" name="fname">
+            <input type="text" placeholder="Last Name" name="lname">
+            <p>Address:</p>
+            <input type="text" placeholder="Street" name="street">            
+            <input type="text" placeholder="city" name="city">
+            <input type="text" placeholder="State" name="state">
+            <input type="text" placeholder="Zip Code" name="zip">
+
+
+        </form>
+    </div>
     
 </body>
 </html>

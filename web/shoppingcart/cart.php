@@ -14,11 +14,19 @@ session_start()
     </script>
 </head>
 <body>
-<a href="browse.php">browse</a>
+    <div>
+        <header>
+            <h1>Cart</h1>
+        </header>
+    </div>
+    <div>
+        <a href="browse.php">browse</a>
+    </div>
+
     <?php 
         foreach ($_SESSION['cart'] as $i => $value) {
             echo "<div>";
-            echo "<form action='remove.php' method='post'>";
+            echo "<form class='cart_form' action='remove.php' method='post'>";
             echo $_SESSION['cart'][$i][0] . "<br>";
             echo "Price: $" . $_SESSION['cart'][$i][1];
             echo "<input type='hidden' name='product_index' value='$i'>";

@@ -19,7 +19,7 @@ if (!isset($_SESSION['cart'])) {
 <body>
     <div>
         <header>
-            <h3>Shop Here</h3>
+            <h1>Shop Here</h1>
         </header>
     </div>
     <div>
@@ -29,10 +29,17 @@ if (!isset($_SESSION['cart'])) {
     </div>
     <div>
         <div>
-            <form name="form1" action="add.php" method="post">
+            <form name="form1" class="cart_form" action="add.php" method="post">
                 <div>
-                    <h2>Squirtle</h2>
-                    <h3>$7000</h3>
+                    <div class="container">
+                        <div class="item1">
+                            <h2>Squirtle</h2>
+                            <h3>$7000</h3>
+                        </div>
+                        <div class="item2">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                     <input type="hidden" value="7000" name="price">
                     <input type="hidden" value="Squirtle" name="product">
                     <input type="submit" value="Add">
@@ -40,10 +47,17 @@ if (!isset($_SESSION['cart'])) {
             </form>
         </div>
         <div>
-            <form name="form2" action="add.php" method="post">
+            <form name="form2" class="cart_form" action="add.php" method="post">
                 <div>
-                    <h2>Pikachu</h2>
-                    <h3>$5000</h3>
+                    <div class="container">
+                        <div class="item1">
+                            <h2>Pikachu</h2>
+                            <h3>$5000</h3>
+                        </div>
+                        <div class="item2">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                     <input type="hidden" value="5000" name="price">
                     <input type="hidden" value="Pikachu" name="product">
                     <input type="submit" value="Add">
@@ -51,10 +65,17 @@ if (!isset($_SESSION['cart'])) {
             </form>
         </div>
         <div>
-            <form name="form3" action="add.php" method="post">
+            <form name="form3" class="cart_form" action="add.php" method="post">
                 <div>
-                    <h2>Charmander</h2>
-                    <h3>$10000</h3>
+                    <div class="container">
+                        <div class="item1">
+                            <h2>Charmander</h2>
+                            <h3>$10000</h3>
+                        </div>
+                        <div class="item2">
+                            <img src="" alt="">
+                        </div>
+                    </div>                    
                     <input type="hidden" value="10000" name="price">
                     <input type="hidden" value="Charmander" name="product">
                     <input type="submit" value="Add">
