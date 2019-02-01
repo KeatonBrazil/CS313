@@ -23,9 +23,14 @@ if (!isset($_SESSION['cart'])) {
         </header>
     </div>
     <div>
-        <?php
-            echo "<h4>You have " . sizeof($_SESSION['cart']) . " items in your cart.</h4>";
-        ?>
+        <div>
+            <div id="navbar" class="sticky">
+                <?php
+                    echo "<h4>" . sizeof($_SESSION['cart']) . " items in your <a class='element' href='cart.php'>cart</a>.</h4>";
+                ?>
+            </div>
+        </div>
+        
     </div>
     <div>
         <div>
@@ -82,9 +87,6 @@ if (!isset($_SESSION['cart'])) {
                 </div>
             </form>
         </div>
-    </div>
-    <a href="cart.php">cart</a>
-    
-    
+    </div> 
 </body>
 </html>

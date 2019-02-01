@@ -8,6 +8,11 @@ a {
     text-decoration: none;
 }
 
+header {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(56, 0, 0); 
+}
+
 .cart_form {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgb(56, 0, 0);
@@ -17,4 +22,25 @@ a {
 
 .checkout_form {
 
+}
+
+#navbar {
+    background-color: rgb(53, 53, 53);
+    text-align: right;
+    box-shadow: 0 4px 8px 0 rgb(56, 0, 0);
+    margin: 0;
+    padding: 10px;
+}
+
+.element {
+    text-decoration: none;
+    color: white;
+    margin:0;
+    padding: 10px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
 }

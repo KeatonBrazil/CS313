@@ -19,8 +19,10 @@ session_start()
             <h1>Cart</h1>
         </header>
     </div>
-    <div>
-        <a href="browse.php">browse</a>
+    <div id="navbar" class="sticky">
+        <div>
+            <a href="browse.php">browse</a>
+        </div>        
     </div>
 
     <?php 
