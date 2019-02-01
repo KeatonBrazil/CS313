@@ -22,15 +22,12 @@ if (!isset($_SESSION['cart'])) {
             <h1>Shop Here</h1>
         </header>
     </div>
-    <div>
-        <div id="navbar">
-            <div>
-                <?php
-                    echo sizeof($_SESSION['cart']) . " <a class='element' href='cart.php'>cart</a>";
-                ?>
-            </div>
-        </div>
-        
+    <div id="navbar">        
+        <div>
+            <?php
+                echo sizeof($_SESSION['cart']) . " <a class='element' href='cart.php'>cart</a>";
+            ?>
+        </div>       
     </div>
     <div>
         <div>
