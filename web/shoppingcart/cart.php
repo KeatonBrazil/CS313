@@ -26,7 +26,9 @@ session_start()
     </div>
 
     <?php 
-        
+        $pikachu="pikachu.jpg";
+        $squirtle="squirtle.png";
+        $charmander="charmander.png";
         foreach ($_SESSION['cart'] as $i => $value) {
             echo "<div>";
             echo "<form class='cart_form' action='remove.php' method='post'>";
@@ -36,8 +38,13 @@ session_start()
             echo "<h3>Price: $" . $_SESSION['cart'][$i][1] . "</h3>";
             echo "</div>";
             echo "<div class='item2'>";
-            $picture = $_SESSION['cart'][$i][3];
-            echo "<img id='pokemon' src='$picture' alt='" . $_SESSION['cart'][$i][0] . "'>";
+            if ($_SESSION['cart'][$i][0] == "pikachu"){
+                echo "<img id='pokemon' src='$pikachu' alt='" . $_SESSION['cart'][$i][0] . "'>";
+            } elseif ($_SESSION['cart'][$i][0] == "squirtle") {
+                echo "<img id='pokemon' src='$squirtle' alt='" . $_SESSION['cart'][$i][0] . "'>";
+            } else {
+                echo "<img id='pokemon' src='$charmander' alt='" . $_SESSION['cart'][$i][0] . "'>";
+            };            
             echo "</div>";            
             echo "<input type='hidden' name='product_index' value='$i'>";
             echo "<input type='submit' value='Remove'>";            
