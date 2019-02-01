@@ -38,9 +38,9 @@ session_start()
             echo "<h3>Price: $" . $_SESSION['cart'][$i][1] . "</h3>";
             echo "</div>";
             echo "<div class='item2'>";
-            if ($_SESSION['cart'][$i][0] == "pikachu"){
+            if ($_SESSION['cart'][$i][0] == "Pikachu"){
                 echo "<img id='pokemon' src='$pikachu' alt='" . $_SESSION['cart'][$i][0] . "'>";
-            } elseif ($_SESSION['cart'][$i][0] == "squirtle") {
+            } elseif ($_SESSION['cart'][$i][0] == "Squirtle") {
                 echo "<img id='pokemon' src='$squirtle' alt='" . $_SESSION['cart'][$i][0] . "'>";
             } else {
                 echo "<img id='pokemon' src='$charmander' alt='" . $_SESSION['cart'][$i][0] . "'>";
