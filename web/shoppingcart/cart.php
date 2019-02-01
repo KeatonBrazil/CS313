@@ -37,7 +37,7 @@ session_start()
             echo "</div>";
             echo "<div class='item2'>";
             $picture = $_SESSION['cart'][$i][3];
-            echo "<img id='pokemon' src='" . $picture . "' alt='" . $_SESSION['cart'][$i][0] . "'>";
+            echo "<img id='pokemon' src='$picture' alt='" . $_SESSION['cart'][$i][0] . "'>";
             echo "</div>";            
             echo "<input type='hidden' name='product_index' value='$i'>";
             echo "<input type='submit' value='Remove'>";            
