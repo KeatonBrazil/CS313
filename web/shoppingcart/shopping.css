@@ -40,6 +40,9 @@ header {
     margin: 0;
     padding: 2px;
     color:white;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
 }
 
 .element {
@@ -47,12 +50,6 @@ header {
     margin:0;
     padding: 10px;
     font-size: 120%;
-}
-
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top:0;
 }
 
 .container {
@@ -69,7 +66,7 @@ header {
     flex: 50%;
 }
 
-#pokemon {
+.pokemon {
     width: 80%;
     height:auto;
     float:right;

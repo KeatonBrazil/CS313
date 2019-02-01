@@ -24,7 +24,7 @@ if (!isset($_SESSION['cart'])) {
     </div>
     <div>
         <div>
-            <div id="navbar" class="sticky">
+            <div id="navbar">
                 <?php
                     echo sizeof($_SESSION['cart']) . " <a class='element' href='cart.php'>cart</a>";
                 ?>
@@ -39,10 +39,10 @@ if (!isset($_SESSION['cart'])) {
                     <div class="container">
                         <div class="item1">
                             <h2>Squirtle</h2>
-                            <h3>$7000</h3>
+                            <h3>Price: $7000</h3>
                         </div>
                         <div class="item2">
-                            <img id="pokemon" src="squirtle.png" alt="picture of Squirtle">
+                            <img class="pokemon" src="squirtle.png" alt="picture of Squirtle">
                         </div>
                     </div>
                     <input type="hidden" value="7000" name="price">
@@ -57,10 +57,10 @@ if (!isset($_SESSION['cart'])) {
                     <div class="container">
                         <div class="item1">
                             <h2>Pikachu</h2>
-                            <h3>$5000</h3>
+                            <h3>Price: $5000</h3>
                         </div>
                         <div class="item2">
-                            <img id="pokemon" src="pikachu.jpg" alt="picture of Pikachu">
+                            <img class="pokemon" src="pikachu.jpg" alt="picture of Pikachu">
                         </div>
                     </div>
                     <input type="hidden" value="5000" name="price">
@@ -75,10 +75,10 @@ if (!isset($_SESSION['cart'])) {
                     <div class="container">
                         <div class="item1">
                             <h2>Charmander</h2>
-                            <h3>$10000</h3>
+                            <h3>Price: $10000</h3>
                         </div>
                         <div class="item2">
-                            <img id="pokemon" src="charmander.png" alt="picture of Charmander">
+                            <img class="pokemon" src="charmander.png" alt="picture of Charmander">
                         </div>
                     </div>                    
                     <input type="hidden" value="10000" name="price">

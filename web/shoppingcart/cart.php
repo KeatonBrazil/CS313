@@ -19,7 +19,7 @@ session_start()
             <h1>Cart</h1>
         </header>
     </div>
-    <div id="navbar" class="sticky">
+    <div id="navbar">
         <div>
             <a class="element" href="browse.php">browse</a>
         </div>        
@@ -39,11 +39,11 @@ session_start()
             echo "</div>";
             echo "<div class='item2'>";
             if ($_SESSION['cart'][$i][0] == "Pikachu"){
-                echo "<img id='pokemon' src='$pikachu' alt='" . $_SESSION['cart'][$i][0] . "'>";
+                echo "<img class='pokemon' src='$pikachu' alt='" . $_SESSION['cart'][$i][0] . "'>";
             } elseif ($_SESSION['cart'][$i][0] == "Squirtle") {
-                echo "<img id='pokemon' src='$squirtle' alt='" . $_SESSION['cart'][$i][0] . "'>";
+                echo "<img class='pokemon' src='$squirtle' alt='" . $_SESSION['cart'][$i][0] . "'>";
             } else {
-                echo "<img id='pokemon' src='$charmander' alt='" . $_SESSION['cart'][$i][0] . "'>";
+                echo "<img class='pokemon' src='$charmander' alt='" . $_SESSION['cart'][$i][0] . "'>";
             };            
             echo "</div>";            
             echo "<input type='hidden' name='product_index' value='$i'>";
