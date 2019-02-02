@@ -53,7 +53,6 @@ session_start()
         }        
     ?>
     <br>
-    <br>
     <div id="check">
         <a id="check_button" href="checkout.php">Checkout</a>
     </div>
