@@ -14,7 +14,7 @@
             <h1>Checkout</h1>
         </header>
     </div>
-    <div class="chekout_form">
+    <div class="checkout_form">
         <form action="confirm.php" method="post">
             <input type="text" placeholder="First Name" name="fname">
             <input type="text" placeholder="Last Name" name="lname">
