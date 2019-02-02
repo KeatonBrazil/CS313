@@ -86,7 +86,7 @@ header {
 }
 
 #check {
-    flex-direction:row-reverse;
+    text-align: right;
     margin:10px;
 }
 
