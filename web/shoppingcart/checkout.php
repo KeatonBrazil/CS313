@@ -27,7 +27,7 @@
                     <input class="submit_checkout" type="submit" value="Submit">
                 </div>
                 <div class="item2 cancel_checkout">
-                    <a href="cart.php">Cancel</a>
+                    <a class="cancel_link" href="cart.php">Cancel</a>
                 </div>
             </div>
             
