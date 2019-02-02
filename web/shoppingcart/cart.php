@@ -52,5 +52,8 @@ session_start()
             echo "</div>";
         }        
     ?>
+    <div id="check_button">
+        <a href="checkout.php">Checkout</a>
+    </div>
 </body>
 </html>
