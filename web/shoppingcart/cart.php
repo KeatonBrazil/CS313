@@ -34,8 +34,8 @@ session_start()
             echo "<form class='cart_form' action='remove.php' method='post'>";
             echo "<div class='container'>";
             echo "<div class='item1'>";
-            echo "<h2>" . $_SESSION['cart'][$i][0] . "</h2>";
-            echo "<h3>Price: $" . $_SESSION['cart'][$i][1] . "</h3>";
+            echo "<h4>" . $_SESSION['cart'][$i][0] . "</h4>";
+            echo "<p>Price: $" . $_SESSION['cart'][$i][1] . "</p>";
             echo "</div>";
             echo "<div class='item2'>";
             if ($_SESSION['cart'][$i][0] == "Pikachu"){
