@@ -18,11 +18,20 @@
         <form action="confirm.php" method="post">
             <input type="text" placeholder="First Name" name="fname">
             <input type="text" placeholder="Last Name" name="lname">
-            <p>Address:</p>
             <input type="text" placeholder="Street" name="street">            
             <input type="text" placeholder="city" name="city">
             <input type="text" placeholder="State" name="state">
             <input type="text" placeholder="Zip Code" name="zip">
+            <div class="container">
+                <div class="item1">
+                    <input class="submit_checkout" type="submit" value="Submit">
+                </div>
+                <div class="item2">
+                    <a class="cancel_checkout" href="cart.php">Cancel</a>
+                </div>
+            </div>
+            
+            
         </form>
     </div>
     
