@@ -15,6 +15,7 @@
             document.getElementById("badzip").innerHTML = "";
             var doc = document.getElementById("code").value;
             var pattern = /\d{5}/;
+            console.log(pattern)
             if (!doc.match(pattern)) {
                 document.getElementById("badzip").innerHTML = "Zip Code only accepts 5 numbers.";
                 return false;
