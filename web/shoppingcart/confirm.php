@@ -31,11 +31,12 @@
                 echo $_POST["street"] . "<br>"; 
                 echo $_POST["city"] . ", " . $_POST["state"] . ", " . $_POST["zip"] . "<br>";
                 $total = 0;
+                echo "<h3>Order:</h3>";
                 foreach ($_SESSION['cart'] as $i => $value) {
                     echo $_SESSION['cart'][$i][0] . "        $" . $_SESSION['cart'][$i][1] . "<br>"; 
                     $total += $_SESSION['cart'][$i][1];       
                 };
-                echo "Total: $" . $total;
+                echo "<h4>Total: $" . $total . "</h4>";
             ?>
             <div >                
                 <input class="submit_checkout" type="submit" value="Order">                               
