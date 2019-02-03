@@ -23,11 +23,11 @@
     <?php 
         echo "<h2>" . $_POST["fname"] . " " . $_POST["lname"] . "</h2>";
         echo "<h3>Address:</h3>";
-        echo $_POST["street"]; 
+        echo $_POST["street"] . "<br>"; 
         echo $_POST["city"] . ", " . $_POST["state"] . ", " . $_POST["zip"];
         $total = 0;
         foreach ($_SESSION['cart'] as $i => $value) {
-            echo $_SESSION['cart'][$i][0] . " $" . $_SESSION['cart'][$i][1]; 
+            echo $_SESSION['cart'][$i][0] . "        $" . $_SESSION['cart'][$i][1] . "<br>"; 
             $total += $_SESSION['cart'][$i][1];       
         };
         echo "Total: $" . $total;
