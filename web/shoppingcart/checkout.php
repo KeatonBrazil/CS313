@@ -6,7 +6,11 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="shopping.css" />
-    <script></script>
+    <script>
+        function redirect() {
+            window.location.href="cart.php";
+        };
+    </script>
 </head>
 <body>
     <div>
@@ -22,17 +26,13 @@
             <input type="text" placeholder="city" name="city">
             <input type="text" placeholder="State" name="state">
             <input type="text" placeholder="Zip Code" name="zip">
-            <div class="container">
-                <div class="item1">
-                    <input class="submit_checkout" type="submit" value="Submit">
-                </div>
-                <div class="item2 cancel_checkout">
-                    <a class="cancel_link" href="cart.php">Cancel</a>
-                </div>
-            </div>
-            
-            
+            <div >                
+                <input class="submit_checkout" type="submit" value="Submit">                               
+            </div>                       
         </form>
+        <div>
+            <input class="cancel_checkout" type="button" value="Cancel" onclick="redirect()">
+        </div>
     </div>
     
 </body>
