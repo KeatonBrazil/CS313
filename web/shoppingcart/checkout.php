@@ -14,13 +14,13 @@
         function checkZip() {
             document.getElementById("badzip").innerHTML = "";
             var doc = document.getElementById("code").value;
-            var pattern = /\d{5}/;
+            var pattern = "/\d{5}/";
             console.log(pattern);
-            if (!doc.match(pattern)) {
+            if (doc.match(pattern)) {
+                return true;
+            } else {
                 document.getElementById("badzip").innerHTML = "Zip Code only accepts 5 numbers.";
                 return false;
-            } else {
-                return true;
             };
         };
 
