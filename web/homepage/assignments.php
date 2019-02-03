@@ -25,7 +25,7 @@
     <div class="sub_container">
         <div class="info info_title">
             <ul class="list">
-                <li><a href="../shoppingcart/browse.php"></a></li>
+                <li><a href="../shoppingcart/browse.php">Shopping Cart</a></li>
             </ul>
         </div>
     </div>
