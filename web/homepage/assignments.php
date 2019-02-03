@@ -24,9 +24,9 @@
     </div>
     <div class="sub_container">
         <div class="info info_title">
-            <h1>
-                Assignments... Coming Soon
-            </h1>
+            <ul class="list">
+                <li><a href="../shoppingcart/browse.php"></a></li>
+            </ul>
         </div>
     </div>
 </body>
