@@ -16,12 +16,14 @@
             var doc = document.getElementById("code").value;
             var pattern = "/\d{5}/";
             console.log(pattern);
+            console.log(doc);
             if (doc.match(pattern)) {
                 return true;
             } else {
                 document.getElementById("badzip").innerHTML = "Zip Code only accepts 5 numbers.";
                 return false;
             };
+            console.log(document.getElementById("badzip").innerHTML);
         };
 
         function  checkState() {
