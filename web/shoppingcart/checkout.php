@@ -14,10 +14,9 @@
         function checkZip() {
             document.getElementById("badzip").innerHTML = "";
             var doc = document.getElementById("code").value;
-            var pattern = "/\d{5}/";
+            var pattern = /\d{5}/
             console.log(pattern);
-            console.log(doc);
-            if (doc.match(pattern)) {
+            if (doc.test(pattern)) {
                 return true;
             } else {
                 document.getElementById("badzip").innerHTML = "Zip Code only accepts 5 numbers.";
