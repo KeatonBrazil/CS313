@@ -17,7 +17,7 @@
         <h1>Thank You 
             <?php            
             echo $_SESSION['you'];    
-            var_dump($_SESSION['you'];)         
+            var_dump($_SESSION['you']);       
             ?>
                     
         </h1>
