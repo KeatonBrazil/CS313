@@ -6,11 +6,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Confirm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="shopping.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="shopping.css"/>
     <script>
         function redirect() {
             window.location.href="browse.php";
@@ -32,6 +32,7 @@
                 echo $_POST["city"] . ", " . $_POST["state"] . ", " . $_POST["zip"] . "<br>";
                 $total = 0;
                 echo "<h3>Order:</h3>";
+                echo "<input type='hidden' value='" . $_POST['fname'] . "' name='you'>";
                 foreach ($_SESSION['cart'] as $i => $value) {
                     echo $_SESSION['cart'][$i][0] . "        $" . $_SESSION['cart'][$i][1] . "<br>"; 
                     $total += $_SESSION['cart'][$i][1];       

@@ -14,13 +14,7 @@
 </head>
 <body>
     <div class="checkout_form center">
-        <h1>Thank You 
-            <?php            
-            echo $_SESSION['you'];    
-            var_dump($_SESSION['you']);       
-            ?>
-                    
-        </h1>
+        <h1>Thank You <?php echo $_POST['you']; ?> </h1>
     </div>
     
 </body>
