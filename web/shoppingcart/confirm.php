@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION['you'] = $Post["fname"];
+    $_SESSION['you'] = $_Post["fname"];
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +29,7 @@
                 echo "<h2>" . $_POST["fname"] . " " . $_POST["lname"] . "</h2>";
                 echo "<h3>Address:</h3>";
                 echo $_POST["street"] . "<br>"; 
-                echo $_POST["city"] . ", " . $_POST["state"] . ", " . $_POST["zip"];
+                echo $_POST["city"] . ", " . $_POST["state"] . ", " . $_POST["zip"] . "<br>";
                 $total = 0;
                 foreach ($_SESSION['cart'] as $i => $value) {
                     echo $_SESSION['cart'][$i][0] . "        $" . $_SESSION['cart'][$i][1] . "<br>"; 
