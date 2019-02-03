@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,29 +13,7 @@
     <script>
         function redirect() {
             window.location.href="cart.php";
-        };
-
-        function checkZip() {
-            document.getElementById("badzip").innerHTML = "";
-            var doc = document.getElementById("code").value;
-            var pattern = /\d{5}/
-            console.log(pattern);
-            if (doc.test(pattern)) {
-                return true;
-            } else {
-                document.getElementById("badzip").innerHTML = "Zip Code only accepts 5 numbers.";
-                return false;
-            };
-            console.log(document.getElementById("badzip").innerHTML);
-        };
-
-        function  checkState() {
-            var doc = document.getElementById("stat").value;
-        };
-
-        function onValidate() {
-            
-        };
+        };        
     </script>
 </head>
 <body>
@@ -41,15 +23,13 @@
         </header>
     </div>
     <div class="checkout_form">
-        <form action="confirm.php" onsubmit="return onValidate()" method="post">
+        <form action="confirm.php" method="post">
             <input type="text" placeholder="First Name" id="first" name="fname">
             <input type="text" placeholder="Last Name" id="last" name="lname">
             <input type="text" placeholder="Street" id="strt" name="street">            
             <input type="text" placeholder="city" id="cit" name="city">
             <input type="text" placeholder="State" id="stat" name="state">
-            <input type="text" placeholder="Zip Code" id="code" name="zip" onchange="checkZip()">
-            <p id="badstate"></p>
-            <p id="badzip"></p>
+            <input type="text" placeholder="Zip Code" id="code" name="zip">
             <div >                
                 <input class="submit_checkout" type="submit" value="Submit">                               
             </div>                       
