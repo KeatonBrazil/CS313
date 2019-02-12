@@ -5,6 +5,9 @@ body {
 }
 
 .login_form {
+    background-color: white;
     margin: 20px;
     padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(65, 52, 17)
 }
