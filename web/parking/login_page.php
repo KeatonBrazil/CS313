@@ -9,12 +9,14 @@
     <script></script>
 </head>
 <body>
-    <div class="login_form">
-        <form action="">
-            <span></span>
-            <input type="text" placeholder="Enter Username">
-            <input type="text" placeholder="Enter Password">
-        </form>
+    <div class="row">
+        <div class="login_form col-4 col-5 col-6 col-7 col-8 col-9">
+            <form action="">
+                <span></span>
+                <input type="text" placeholder="Enter Username">
+                <input type="text" placeholder="Enter Password">
+            </form>
+        </div>
     </div>
 </body>
 </html>
