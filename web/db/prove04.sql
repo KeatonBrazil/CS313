@@ -10,8 +10,9 @@ CREATE TABLE parking_lot (
 
 CREATE TABLE member (
     member_id       SERIAL PRIMARY KEY,
-    username        VARCHAR (50) UNIQUE NOT NULL,
-    pass_word       VARCHAR (50) NOT NULL,
+    username        VARCHAR (20) UNIQUE NOT NULL,
+    pass_word       VARCHAR (20) NOT NULL,
+    email           VARCHAR (30) UNIQUE NOT NULL,
     school_relation VARCHAR (15) NOT NULL,
     major           VARCHAR (50) NOT NULL,
     apt_name        VARCHAR (50) NOT NULL,
