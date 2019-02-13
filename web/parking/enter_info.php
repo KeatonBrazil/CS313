@@ -16,6 +16,38 @@ $db = get_db();
         <script src="main.js"></script>
     </head>
     <body>
+        <div>
+            <header>
+
+            </header>        
+        </div>
+        <div>
         
+        </div>
+        <div>
+            <form action="">
+                <label for="building">Building</label>
+                <select name="" id="building">
+                    <option value="">STC</option>
+                    <option value="">Austin</option>
+                    <option value="">Taylor</option>
+                    <option value="">Kymball</option>
+                    <option value="">Snow</option>
+                </select>
+                <label for="lot">Parking Lot</label>
+                <select name="" id="lot">
+                    <option value="">Taylor N parking</option>
+                    <option value="">Benson A parking</option>
+                    <option value="">Kymball N parking</option>
+                    <option value="">Kymball A parking</option>
+                    <option value="">STC S parking</option>
+                </select>
+                <label for="start">Arrival Time</label>
+                <input type="text" name="" id="start">
+                <label for="end">Departure Time</label>
+                <input type="text" name="" id="end">'
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </body>
 </html>

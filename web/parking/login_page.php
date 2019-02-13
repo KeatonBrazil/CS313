@@ -16,12 +16,22 @@ $db = get_db();
         <script></script>
     </head>
     <body>
-        <div class="login_form">
-            <form action="">
-                <span></span>
+        <div>
+            <header>
+
+            </header>        
+        </div>
+        <div>
+        
+        </div>        
+        <div class="">
+            <form action="enter_info.php">
                 <input type="text" placeholder="Enter Username">
                 <input type="text" placeholder="Enter Password">
+                <input type="submit" value="Login">
             </form>
+            <a href="sign_up.php">Signup!</a>
+            <a href="">Forgot Password?</a>
         </div>
         
     </body>

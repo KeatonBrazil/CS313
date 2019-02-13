@@ -17,9 +17,19 @@ $db = get_db();
     </head>
     <body>
         <div>
+            <header>
+
+            </header>        
+        </div>
+        <div>
+        
+        </div>
+        <div>
+
             <?PHP
 
             ?>
+
         </div>
     </body>
 </html>
