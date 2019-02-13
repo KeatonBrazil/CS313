@@ -10,19 +10,12 @@ $db = get_db();
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Parking | Login</title>
+        <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script></script>
+        <script src="main.js"></script>
     </head>
     <body>
-        <div class="login_form">
-            <form action="">
-                <span></span>
-                <input type="text" placeholder="Enter Username">
-                <input type="text" placeholder="Enter Password">
-            </form>
-        </div>
         
     </body>
 </html>
