@@ -23,7 +23,7 @@ $db = get_db();
         </div>
         <div>
             <ul class="list-inline">
-                <li><a href="enter_info.php"></a></li>
+                <li><a href="enter_info.php">Enter daily parking information</a></li>
             </ul>
         </div> 
         <div>
