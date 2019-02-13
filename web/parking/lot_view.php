@@ -22,8 +22,10 @@ $db = get_db();
             </header>        
         </div>
         <div>
-        
-        </div>
+            <ul class="list-inline">
+                <li><a href="enter_info.php"></a></li>
+            </ul>
+        </div> 
         <div>
 
             <?PHP

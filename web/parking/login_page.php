@@ -13,6 +13,9 @@ $db = get_db();
         <title>Parking | Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <style>
+
+        </style>
         <script></script>
     </head>
     <body>
@@ -20,10 +23,7 @@ $db = get_db();
             <header>
 
             </header>        
-        </div>
-        <div>
-        
-        </div>        
+        </div>       
         <div class="">
             <form action="enter_info.php">
                 <input type="text" placeholder="Enter Username">

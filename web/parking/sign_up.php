@@ -23,7 +23,31 @@ $db = get_db();
             </header>        
         </div>
         <div>
-        
+            <form action="add_user.php">
+                <label for="user">Username</label>
+                <input type="text" id="user">
+                <label for="pass">Password</label>
+                <input type="text" id="pass">
+                <label for="cpass">Confirm Password</label>
+                <input type="text" id="cpass">
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <label for="relation">School Relation</label>
+                <select name="" id="relation">
+                    <option value="">Student</option>
+                    <option value="">Faculty</option>
+                    <option value="">Visitor</option>
+                </select>
+                <label for="major">Department</label>
+                <input type="text" id="major">
+                <label for="no">Pregnant?</label>
+                <input type="radio" id="no" name="preg" checked> No
+                <input type="radio" id="yes" name="preg"> Yes
+                <label for="apt">Apartment Complex</label>
+                <input type="text" id="apt">
+                <input type="submit" value="Join">
+                <input type="reset" value="Reset">
+            </form>
         </div>
         
     </body>

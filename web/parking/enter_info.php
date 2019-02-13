@@ -18,12 +18,15 @@ $db = get_db();
     <body>
         <div>
             <header>
-
+                
             </header>        
         </div>
         <div>
-        
-        </div>
+            <ul class="list-inline">
+                <li><a href="lot_view.php"></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div> 
         <div>
             <form action="">
                 <label for="building">Building</label>
