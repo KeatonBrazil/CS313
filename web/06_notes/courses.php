@@ -29,7 +29,7 @@ foreach ($courses as $course) {
     $name = $course['name'];
     $course_code = $course['course_code'];
 
-    echo "<li><a href='notes.php?course_id=$id'>$code - $name</li>\n";
+    echo "<li><a href='notes.php?course_id=$id'>$course_code - $name</li>\n";
 } 
 ?>
 </body>
