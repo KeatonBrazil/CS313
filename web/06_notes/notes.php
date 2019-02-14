@@ -37,9 +37,9 @@
 ?>
 
 <form action="insert_note.php" method="post">
-    <input type="date" name="date">
+    <input type="date" name="date"><br>
     <input type="hidden" name="course_id" value="<?php echo $course_id; ?>">
-    <textarea name="content" cols="30" rows="10"></textarea>
+    <textarea name="content" cols="30" rows="10"></textarea><br>
     <input type="submit" value="insert_note">
 </form>
 
