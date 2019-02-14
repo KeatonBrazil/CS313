@@ -34,26 +34,26 @@ $db = get_db();
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <form action="add_user.php">
-                <label for="user">Username</label>
+                <label for="user">Username</label><br>
                 <input type="text" id="user"><br>
-                <label for="pass">Password</label>
+                <label for="pass">Password</label><br>
                 <input type="text" id="pass"><br>
-                <label for="cpass">Confirm Password</label>
+                <label for="cpass">Confirm Password</label><br>
                 <input type="text" id="cpass"><br>
-                <label for="email">Email</label>
+                <label for="email">Email</label><br>
                 <input type="text" id="email"><br>
-                <label for="relation">School Relation</label>
+                <label for="relation">School Relation</label><br>
                 <select name="" id="relation"><br>
                     <option value="">Student</option>
                     <option value="">Faculty</option>
                     <option value="">Visitor</option>
                 </select>
-                <label for="major">Department</label>
+                <label for="major">Department</label><br>
                 <input type="text" id="major"><br>
-                <label for="no">Pregnant?</label>
+                <label for="no">Pregnant?</label><br>
                 <input type="radio" id="no" name="preg" checked>No<br>
                 <input type="radio" id="yes" name="preg">Yes<br>
-                <label for="apt">Apartment Complex</label>
+                <label for="apt">Apartment Complex</label><br>
                 <input type="text" id="apt"><br>
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
