@@ -2,7 +2,7 @@
     require('notes_db.php');
     $db = get_db();
 
-    $course = $_GET['course_id'];
+    $course_id = htmlspecialchars($_GET["course_id"]);
 
     $query = 'SELECT id, name, course_code FROM course WHERE id=:id';
     $statement = $db->prepare($query);
@@ -32,16 +32,14 @@
 <?php
     $course_name = $course['name'];
     $course_code = $course['course_code'];
-    echo "<h1>Notes for $course_code - $course_name</h1>";
-
+    echo "<h1>Notes for course:  $course_code - $course_name</h1>";
 ?>
-
-<form action="insert_note.php" method="post">
-    <input type="date" name="date"><br>
-    <input type="hidden" name="course_id" value="<?php echo $course_id; ?>">
-    <textarea name="content" cols="30" rows="10"></textarea><br>
-    <input type="submit" value="insert_note">
-</form>
+    <form action="insert_note.php" method="post">
+        <input type="date" name="date" /><br />
+        <input type="hidden" name="course_id" value="<?php echo $course_id; ?>">
+        <textarea name="content"></textarea><br />
+        <input type="submit" value="Insert Note">
+    </form>
 
 <?php
 foreach ($notes as $note) {
