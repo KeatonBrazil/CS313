@@ -18,15 +18,18 @@ $db = get_db();
     </head>
     <body>
         <div>
-            <header>
-
-            </header>        
+            <header class="parking_center">
+                <h1>BYU-I Parking</h1>
+            </header>       
         </div>
-        <div>
-            <ul class="list-inline">
-                <li><a href="enter_info.php">Enter daily parking information</a></li>
-            </ul>
-        </div> 
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                <li><a href="enter_info.php">My Parking</a></li>
+                <li class="active"><a href="lot_view.php">Parking Status</a></li>
+                </ul>
+            </div>
+        </nav>
         <div>
 
             <?PHP
