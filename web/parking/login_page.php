@@ -37,11 +37,11 @@ $db = get_db();
         <div class="col-md-4 col-md-offset-4">
             <form action="enter_info.php">
             <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-user"></i>      
+                <span class="glyphicon glyphicon-user"></span>      
                 <input type="text" class="form-control" name="user" placeholder="Username"/>
             </div>
             <div class="inner-addon left-addon">
-                <i class="glyphicon glyphicon-lock"></i>      
+                <span class="glyphicon glyphicon-lock"></span>      
                 <input type="text" class="form-control" name="pass" placeholder="Password" />
             </div>
                 <input type="submit" value="Login">
