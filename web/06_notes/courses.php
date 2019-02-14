@@ -1,8 +1,11 @@
 <?php 
-    require('notes_db.php');
+    require_once('notes_db.php');
     $db = get_db();
 
-    $course = $_GET['course_id'];
+    $query = 'SELECT id, name, course_code FROM course';
+    $statement = $db->prepare($query);
+    $statement->execute();
+    $courses = $statement->fetchALL(PDO::FETCH_ASSOC);
 ?>
 
 
@@ -21,18 +24,13 @@
 <body>
     
 <?php
-    $course_name = $course['name'];
+foreach ($courses as $course) {
+    $id = $course['id'];
+    $name = $course['name'];
     $course_code = $course['course_code'];
-    echo "<h1>Notes for $course_code - $course_name</h1>";
 
+    echo "<li><a href='notes.php?course_id=$id'>$code - $name</li>\n";
+} 
 ?>
-
-<form action="insert_note.php" method="post">
-    <input type="date" name="date">
-    <input type="hidden" name="course_id" value="<?php echo $course_id; ?>">
-    <textarea name="content" cols="30" rows="10"></textarea>
-    <input type="submit" value="insert_note">
-</form>
-
 </body>
 </html>
