@@ -34,7 +34,7 @@ $db = get_db();
                 </ul>
             </div>
         </nav>       
-        <div class="">
+        <div class="col-md-4 col-md-offset-4">
             <form action="enter_info.php">
                 <input type="text" placeholder="Enter Username">
                 <input type="text" placeholder="Enter Password">
