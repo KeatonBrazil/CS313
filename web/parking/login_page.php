@@ -21,8 +21,8 @@ $db = get_db();
     </head>
     <body>
         <div>
-            <header>
-
+            <header class="parking_center">
+                <h1>BYU-I Parking</h1>
             </header>        
         </div>
         <nav class="navbar navbar-inverse sticky_all">
@@ -36,12 +36,10 @@ $db = get_db();
         </nav>       
         <div class="col-md-4 col-md-offset-4">
             <form action="enter_info.php">
-                <input type="text" placeholder="Enter Username">
+                <input type="text" placeholder="Enter Username"><br>
                 <input type="text" placeholder="Enter Password">
                 <input type="submit" value="Login">
             </form>
-            <a href="sign_up.php">Signup!</a>
-            <a href="">Forgot Password?</a>
         </div>
         
     </body>

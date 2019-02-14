@@ -20,8 +20,8 @@ $db = get_db();
     </head>
     <body>
         <div>
-            <header>
-
+            <header class="parking_center">
+                <h1>BYU-I Parking</h1>
             </header>        
         </div>
         <nav class="navbar navbar-inverse sticky_all">
@@ -32,29 +32,29 @@ $db = get_db();
                 </ul>
             </div>
         </nav>
-        <div>
+        <div class="col-md-4 col-md-offset-4">
             <form action="add_user.php">
                 <label for="user">Username</label>
-                <input type="text" id="user">
+                <input type="text" id="user"><br>
                 <label for="pass">Password</label>
-                <input type="text" id="pass">
+                <input type="text" id="pass"><br>
                 <label for="cpass">Confirm Password</label>
-                <input type="text" id="cpass">
+                <input type="text" id="cpass"><br>
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="text" id="email"><br>
                 <label for="relation">School Relation</label>
-                <select name="" id="relation">
+                <select name="" id="relation"><br>
                     <option value="">Student</option>
                     <option value="">Faculty</option>
                     <option value="">Visitor</option>
                 </select>
                 <label for="major">Department</label>
-                <input type="text" id="major">
+                <input type="text" id="major"><br>
                 <label for="no">Pregnant?</label>
-                <input type="radio" id="no" name="preg" checked> No
-                <input type="radio" id="yes" name="preg"> Yes
+                <input type="radio" id="no" name="preg" checked>No<br>
+                <input type="radio" id="yes" name="preg">Yes<br>
                 <label for="apt">Apartment Complex</label>
-                <input type="text" id="apt">
+                <input type="text" id="apt"><br>
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
             </form>
