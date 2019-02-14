@@ -1,6 +1,6 @@
 <?php 
     require('notes_db.php');
-    $db = getdb();
+    $db = get_db();
 
     $query = 'SELECT id, name, course_code FROM course';
     $statement = $db->prepare($query);
