@@ -38,11 +38,11 @@ $db = get_db();
             <form action="enter_info.php">
             <div class="inner-addon left-addon">
                 <span class="glyphicon glyphicon-user"></span>      
-                <input type="text" class="form-control" name="user" placeholder="Username"/>
+                <input type="text"  name="user" placeholder="Username"/>
             </div>
             <div class="inner-addon left-addon">
                 <span class="glyphicon glyphicon-lock"></span>      
-                <input type="text" class="form-control" name="pass" placeholder="Password" />
+                <input type="text"  name="pass" placeholder="Password" />
             </div>
                 <input type="submit" value="Login">
             </form>
