@@ -4,6 +4,13 @@ body {
     padding: 0;
 }
 
+.sticky_all {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+
+}
+
 .login_form {
     justify-content: center;
     background-color: white;

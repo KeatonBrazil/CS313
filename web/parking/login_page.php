@@ -25,7 +25,7 @@ $db = get_db();
 
             </header>        
         </div>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse sticky_all">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                 <li class="active"><a href="login_page.php">Login</a></li>
