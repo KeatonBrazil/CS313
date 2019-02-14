@@ -23,7 +23,16 @@ $db = get_db();
             <header>
 
             </header>        
-        </div>       
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="login_page.php">Login</a></li>
+                <li><a href="sign_up.php">Signup</a></li>
+                <li><a href="">Forgot Password?</a></li>
+                </ul>
+            </div>
+        </nav>       
         <div class="">
             <form action="enter_info.php">
                 <input type="text" placeholder="Enter Username">

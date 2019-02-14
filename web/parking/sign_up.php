@@ -22,6 +22,14 @@ $db = get_db();
 
             </header>        
         </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                <li><a href="login_page.php">Login</a></li>
+                <li class="active"><a href="#">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
         <div>
             <form action="add_user.php">
                 <label for="user">Username</label>
