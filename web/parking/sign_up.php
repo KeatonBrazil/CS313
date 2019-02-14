@@ -24,7 +24,7 @@ $db = get_db();
                 <h1>BYU-I Parking</h1>
             </header>        
         </div>
-        <nav class="navbar navbar-inverse sticky_all">
+        <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
                 <li><a href="login_page.php">Login</a></li>
