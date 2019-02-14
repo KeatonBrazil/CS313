@@ -47,7 +47,7 @@ $db = get_db();
                     <option value="">Student</option>
                     <option value="">Faculty</option>
                     <option value="">Visitor</option>
-                </select>
+                </select><br>
                 <label for="major">Department</label><br>
                 <input type="text" id="major"><br>
                 <label for="no">Pregnant?</label><br>
