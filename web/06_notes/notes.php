@@ -3,10 +3,19 @@
     $db = get_db();
 
     $course = $_GET['course_id'];
+
+    $query = 'SELECT id, name, course_code FROM course WHERE id=:id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':id', $course_id, PDO::PARAM_INT);
+    $statement->execute();
+    $course = $statement->fetch(PDO::FETCH_ASSOC);
+
+    $query = 'SELECT id, date, content FROM note WHERE course_id=:course_id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':course_id', $course_id, PDO::PARAM_INT);
+    $statement->execute();
+    $notes = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html>
@@ -34,5 +43,13 @@
     <input type="submit" value="insert_note">
 </form>
 
+<?php
+foreach ($notes as $note) {
+    $date = $note['date'];
+    $content = $note['content'];
+    echo "<p>Date: $date</p>";
+    echo "<p>$content</p>";
+}
+?>
 </body>
 </html>
