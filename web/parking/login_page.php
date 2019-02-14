@@ -36,8 +36,14 @@ $db = get_db();
         </nav>       
         <div class="col-md-4 col-md-offset-4">
             <form action="enter_info.php">
-                <input type="text" placeholder="Enter Username"><br>
-                <input type="text" placeholder="Enter Password">
+            <div class="inner-addon left-addon">
+                <i class="glyphicon glyphicon-user"></i>      
+                <input type="text" class="form-control" name="user" placeholder="Username"/>
+            </div>
+            <div class="inner-addon left-addon">
+                <i class="glyphicon glyphicon-lock"></i>      
+                <input type="text" class="form-control" name="pass" placeholder="Password" />
+            </div>
                 <input type="submit" value="Login">
             </form>
         </div>
