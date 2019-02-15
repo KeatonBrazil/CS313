@@ -40,9 +40,11 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     $id = $lot['lot_id'];
                     $lot_loc = $lot['lot_location'];
                     $lot_pass = $lot['parking_pass'];
+
+                    echo "<li><a href='lot_detail.php?lot_id=$id'>$lot_loc - $lot_pass</a></li>";
                 }
 
-                echo "<a href='lot_detail.php?lot_id=$id'>$lot_loc - $lot_pass</a>";
+                
             ?>
         </div>
     </body>
