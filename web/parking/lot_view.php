@@ -1,8 +1,12 @@
 <?php
 
-require "parking_db.php";
+require_once("parking_db.php");
 $db = get_db();
 
+$query = 'SELECT lot_id, lot_location, parking_pass FROM parking_lot';
+$stmt = $db->prepare($query);
+$stmt->execute();
+$lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -30,12 +34,16 @@ $db = get_db();
                 </ul>
             </div>
         </nav>
-        <div>
+        <div class="col-md-4 col-md-offset-4">
+            <?php
+                foreach ($lots as $lot) {
+                    $id = $lot['lot_id'];
+                    $lot_loc = $lot['lot_location'];
+                    $lot_pass = $lot['parking_pass'];
+                }
 
-            <?PHP
-
+                echo "<a href='lot_detail.php?lot_id=$id'>$lot_loc - $lot_pass</a>";
             ?>
-
         </div>
     </body>
 </html>

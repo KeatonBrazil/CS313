@@ -21,8 +21,10 @@ CREATE TABLE member (
 
 CREATE TABLE parking_info (
     info_id         SERIAL PRIMARY KEY,
-    start_date_time TIMESTAMP NOT NULL,
-    end_date_time   TIMESTAMP NOT NULL,
+    start_at_date      DATE NOT NULL,
+    start_at_time      TIME NOT NULL,
+    end_at_date        DATE NOT NULL,
+    end_at_time        TIME NOT NULL,
     building        VARCHAR (50) NOT NULL,
     lot_id          INT NOT NULL REFERENCES parking_lot(lot_id),
     member_id       INT NOT NULL REFERENCES member(member_id)
@@ -42,9 +44,9 @@ VALUES
 ('Anna', 'preggy', 'anna@gmail.com', 'Student', 'Computer Science', 'Campus Courtyard', 'True');
 
 INSERT INTO parking_info 
-(start_date_time, end_date_time, building, lot_id, member_id)
+(start_at_date, start_at_time, end_at_date, end_at_time, building, lot_id, member_id)
 VALUES
-('2019-02-13 09:00:00', '2019-02-13 12:00:00', 'Austin', 1, 3),
-('2019-02-13 09:30:00', '2019-02-13 11:15:00', 'Spori', 5, 2),
-('2019-02-13 10:00:00', '2019-02-13 14:30:00', 'Snow', 3, 1),
-('2019-02-13 08:00:00', '2019-02-13 12:45:00', 'STC', 2, 4);
+('2019-02-13', '09:00:00', '2019-02-13', '12:00:00', 'Austin', 1, 3),
+('2019-02-13', '09:30:00', '2019-02-13', '11:15:00', 'Spori', 5, 2),
+('2019-02-13', '10:00:00', '2019-02-13', '14:30:00', 'Snow', 3, 1),
+('2019-02-13', '08:00:00', '2019-02-13', '12:45:00', 'STC', 2, 4);
