@@ -36,7 +36,7 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                 </ul>
             </div>
         </nav>
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
             <form action="">
                 <label for="lot">Parking Destination</label><br>
@@ -56,7 +56,7 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
             </div><br><br>
             <div class="my_layout">
                 <h2 class='parking_center'>My Parking Log</h2>
-                <table>
+                <table class="table">
                     <tr>
                        <th>Lot</th>
                        <th>Pass</th>
