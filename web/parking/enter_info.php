@@ -54,8 +54,8 @@ $db = get_db();
                 <label for="start">Arrival Time</label><br>
                 <input type="text" name="" id="start"><br>
                 <label for="end">Departure Time</label><br>
-                <input type="text" name="" id="end"><br>
-                <input type="submit" value="Submit"><br>
+                <input type="text" name="" id="end"><br><br>
+                <input type="submit" value="Submit">
             </form>
             </div>
         </div>
