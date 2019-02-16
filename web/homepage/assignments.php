@@ -26,6 +26,7 @@
         <div class="info info_title">
             <ul class="list">
                 <li><a href="../shoppingcart/browse.php">Shopping Cart</a></li>
+                <li><a href="../parking/login_page.php">Parking Lot Project</a></li>
             </ul>
         </div>
     </div>
