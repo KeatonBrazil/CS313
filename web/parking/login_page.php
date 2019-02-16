@@ -42,7 +42,7 @@ $db = get_db();
             </div>
             <div class="inner-addon left-addon">
                 <span class="glyphicon glyphicon-lock"></span>      
-                <input type="text"  name="pass" placeholder="Password" />
+                <input type="password"  name="pass" placeholder="Password" />
             </div>
                 <input type="submit" value="Login">
             </form>

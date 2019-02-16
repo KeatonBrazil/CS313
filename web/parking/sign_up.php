@@ -15,7 +15,6 @@ $db = get_db();
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
-        <style></style>
         <script></script>
     </head>
     <body>
@@ -33,7 +32,7 @@ $db = get_db();
             </div>
         </nav>
         <div class="col-md-4 col-md-offset-4">
-            <form action="add_user.php">
+            <form action="add_user.php" submit="return Validate()">
                 <label for="user">Username</label><br>
                 <input type="text" id="user"><br>
                 <label for="pass">Password</label><br>
