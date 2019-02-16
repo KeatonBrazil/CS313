@@ -23,8 +23,8 @@ CREATE TABLE parking_info (
     info_id         SERIAL PRIMARY KEY,
     start_at_date      DATE NOT NULL,
     start_at_time      TIME NOT NULL,
-    end_at_date        DATE NOT NULL,
-    end_at_time        TIME NOT NULL,
+    end_at_date        DATE,
+    end_at_time        TIME,
     building        VARCHAR (50) NOT NULL,
     lot_id          INT NOT NULL REFERENCES parking_lot(lot_id),
     member_id       INT NOT NULL REFERENCES member(member_id)
