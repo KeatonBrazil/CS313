@@ -31,6 +31,7 @@ $db = get_db();
             </div>
         </nav>
         <div>
+            <div class="my_layout">
             <form action="">
                 <label for="building">Building</label>
                 <select name="" id="building">
@@ -54,6 +55,7 @@ $db = get_db();
                 <input type="text" name="" id="end">'
                 <input type="submit" value="Submit">
             </form>
+            </div>
         </div>
     </body>
 </html>

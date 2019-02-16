@@ -32,6 +32,7 @@ $db = get_db();
             </div>
         </nav>
         <div class="col-md-4 col-md-offset-4">
+            <div class="my_layout">
             <form action="add_user.php" submit="return Validate()">
                 <label for="user">Username</label><br>
                 <input type="text" id="user"><br>
@@ -57,6 +58,7 @@ $db = get_db();
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
             </form>
+            </div>
         </div>
         
     </body>

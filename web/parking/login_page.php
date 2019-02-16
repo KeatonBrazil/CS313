@@ -35,6 +35,7 @@ $db = get_db();
             </div>
         </nav>       
         <div class="col-md-4 col-md-offset-4">
+            <div class="my_layout">
             <form action="enter_info.php">
             <div class="inner-addon left-addon">
                 <span class="glyphicon glyphicon-user"></span>      
@@ -46,6 +47,7 @@ $db = get_db();
             </div>
                 <input type="submit" value="Login">
             </form>
+            </div>
         </div>
         
     </body>

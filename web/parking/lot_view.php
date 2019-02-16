@@ -35,25 +35,27 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </nav>
         <div class="col-md-4 col-md-offset-4">
-            <table class="table">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Parking Lot</th>
-                        <th scope="col">Parking Pass</th>
-                    </tr>
-                </thead>
-            <?php
-                foreach ($lots as $lot) {
-                    $id = $lot['lot_id'];
-                    $lot_loc = $lot['lot_location'];
-                    $lot_pass = $lot['parking_pass'];
-                    
-                    echo "<tr><td scope='row'><a href='lot_detail.php?lot_id=$id'>$lot_loc</a></td><td scope='row'>$lot_pass</td></tr>";
-                }
+            <div class="my_layout">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Parking Lot</th>
+                            <th scope="col">Parking Pass</th>
+                        </tr>
+                    </thead>
+                <?php
+                    foreach ($lots as $lot) {
+                        $id = $lot['lot_id'];
+                        $lot_loc = $lot['lot_location'];
+                        $lot_pass = $lot['parking_pass'];
+                        
+                        echo "<tr><td><a href='lot_detail.php?lot_id=$id'>$lot_loc</a></td><td>$lot_pass</td></tr>";
+                    }
 
-                
-            ?>
-            </table>
+                    
+                ?>
+                </table>
+            </div>
         </div>
     </body>
 </html>
