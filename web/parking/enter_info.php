@@ -61,8 +61,7 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                        <th>Lot</th>
                        <th>Pass</th>
                        <th>Start Date</th>
-                       <th>Start Time</th>
-                       <th>Building</th> 
+                       <th>Start Time</th> 
                     </tr>
                 <?php
                     foreach ($logs as $log) {
