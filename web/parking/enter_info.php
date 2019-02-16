@@ -3,7 +3,7 @@
 require_once("parking_db.php");
 $db = get_db();
 
-$query = "SELECT lot_location, parking_pass, building, to_char(start_at_date, 'Month DD YYYY') AS start_date, to_char(start_at_time, 'HH24:MI') AS start_time FROM parking_info JOIN parking_lot USING(lot_id) ORDER BY info_id DESC";
+$query = "SELECT lot_location, parking_pass, to_char(start_at_date, 'Month DD YYYY') AS start_date, to_char(start_at_time, 'HH24:MI') AS start_time FROM parking_info JOIN parking_lot USING(lot_id) ORDER BY info_id DESC";
 $statement = $db->prepare($query);
 $statement->execute();
 $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -36,17 +36,9 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                 </ul>
             </div>
         </nav>
-        <div class="col-md-4 col-md-offset-4">
+        <div class="col-md-6 col-md-offset-3">
             <div class="my_layout">
             <form action="">
-                <label for="building">Academic Destination</label><br>
-                <select name="" id="building">
-                    <option value="">STC</option>
-                    <option value="">Austin</option>
-                    <option value="">Taylor</option>
-                    <option value="">Kymball</option>
-                    <option value="">Snow</option>
-                </select><br>
                 <label for="lot">Parking Destination</label><br>
                 <select name="" id="lot">
                     <option value="">Taylor N parking</option>
@@ -78,8 +70,7 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                         $pass = $log['parking_pass'];
                         $start_date = $log['start_date'];
                         $start_time = $log['start_time'];
-                        $building = $log['building'];
-                        echo "<tr><td>$lot</td><td>$pass</td><td>$start_date</td><td>$start_time</td><td>$building</td></tr>";
+                        echo "<tr><td>$lot</td><td>$pass</td><td>$start_date</td><td>$start_time</td></tr>";
 
                     }               
                 ?>        
