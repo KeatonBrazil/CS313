@@ -3,7 +3,7 @@
 require_once("parking_db.php");
 $db = get_db();
 
-$query = 'SELECT lot_id, lot_location, parking_pass FROM parking_lot';
+$query = 'SELECT lot_id, lot_location, parking_pass FROM parking_lot ORDER BY lot_location, parking_pass';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -37,7 +37,7 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
                 <table class="table">
-                    <thead class="thead-dark">
+                    <thead>
                         <tr>
                             <th scope="col">Parking Lot</th>
                             <th scope="col">Parking Pass</th>
