@@ -32,7 +32,7 @@ CREATE TABLE parking_info (
 INSERT INTO parking_lot 
 (lot_location, parking_pass)
 VALUES 
-('Taylor', 'North'), ('STC', 'South'), ('Snow', 'Administrator'), ('Kymball', 'North'), ('Kymball', 'Administrator'), ('I-Center', 'North');
+('Taylor', 'North'), ('STC', 'South'), ('Snow', 'Admin'), ('Kymball', 'North'), ('Kymball', 'Admin'), ('I-Center', 'North');
 
 INSERT INTO member 
 (username, pass_word, email, school_relation, major, apt_name, pregnant)
@@ -43,7 +43,7 @@ VALUES
 ('Anna', 'preggy', 'anna@gmail.com', 'Student', 'Computer Science', 'Campus Courtyard', 'True');
 
 INSERT INTO parking_info 
-(start_at_date, start_at_time, end_at_date, end_at_time, building, lot_id, member_id)
+(start_at_date, start_at_time, end_at_date, end_at_time, lot_id, member_id)
 VALUES
 ('2019-02-13', '09:00:00', '2019-02-13', '12:00:00', 1, 3),
 ('2019-02-13', '09:30:00', '2019-02-13', '11:15:00', 5, 2),
