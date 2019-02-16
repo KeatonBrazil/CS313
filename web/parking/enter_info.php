@@ -25,8 +25,10 @@ $db = get_db();
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                <li class="active"><a href="enter_info.php">My Parking</a></li>
-                <li><a href="lot_view.php">Parking Status</a></li>
+                <li><a href="lot_view.php">Parking</a></li>
+                <li class="active"><a href="enter_info.php">Check In</a></li>
+                <li><a href="checkout.php">Check Out</a></li>
+                <li><a href="reserve.php">Reserve</a></li>                
                 </ul>
             </div>
         </nav>

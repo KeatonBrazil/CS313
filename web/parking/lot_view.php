@@ -14,7 +14,7 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Parking Lots | BYU-I Parking</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
@@ -29,8 +29,10 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <ul class="nav navbar-nav">
-                <li><a href="enter_info.php">Checkin</a></li>
                 <li class="active"><a href="lot_view.php">Parking</a></li>
+                <li><a href="enter_info.php">Check In</a></li>
+                <li><a href="checkout.php">Check Out</a></li>
+                <li><a href="reserve.php">Reserve</a></li>
                 </ul>
             </div>
         </nav>

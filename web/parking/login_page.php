@@ -36,7 +36,7 @@ $db = get_db();
         </nav>       
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="enter_info.php">
+            <form action="lot_view.php">
             <div class="inner-addon left-addon">
                 <span class="glyphicon glyphicon-user"></span>      
                 <input type="text"  name="user" placeholder="Username"/>
