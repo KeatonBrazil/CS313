@@ -38,19 +38,25 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="">
-                <label for="lot">Parking Destination</label><br>
-                <select name="" id="lot">
-                    <option value="">Taylor N parking</option>
-                    <option value="">Benson A parking</option>
-                    <option value="">Kymball N parking</option>
-                    <option value="">Kymball A parking</option>
-                    <option value="">STC S parking</option>
+            <form action="insert_checkin.php">
+                <label for="lot">Parking Lot</label><br>
+                <select name="plot" id="lot">
+                    <option value="Taylor">Taylor</option>
+                    <option value="Benson">Benson</option>
+                    <option value="Kymball">Kymball</option>
+                    <option value="Kymball">Kymball</option>
+                    <option value="STC">STC</option>
+                </select><br>
+                <label for="pass">Parking Pass</label><br>
+                <select name="ppass" id="pass">
+                    <option value="North">North</option>
+                    <option value="South">South</option>
+                    <option value="Admin">Administrator</option>
                 </select><br>
                 <label for="start_time">Arrival Time</label><br>
-                <input type="time" name="" id="start_time"><br>
+                <input type="time" name="stime" id="start_time"><br>
                 <label for="start_date">Arrival Date</label><br>
-                <input type="date" name="" id="start_date"><br><br>
+                <input type="date" name="sdate" id="start_date"><br><br>
                 <input type="submit" value="Submit">
             </form>
             </div><br><br>
