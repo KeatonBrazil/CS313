@@ -33,7 +33,7 @@ $db = get_db();
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="add_user.php">
+            <form action="add_user.php" method="post">
                 <label for="user">Username</label><br>
                 <input type="text" id="user" name="uzer"><br>
                 <label for="pass">Password</label><br>

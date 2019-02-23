@@ -9,7 +9,16 @@
     $major = htmlspecialchars($_POST['degree']);
     $preg = htmlspecialchars($_POST['preg']);
     $apt = htmlspecialchars($_POST['home']);
-    $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, pregnant, apt_name) VALUES (:user, :pass, :email, :relation, :major, :preg, :apt)';
+    var_dump($user);
+    var_dump($pass);
+    var_dump($email);
+    var_dump($relation);
+    var_dump($major);
+    var_dump($preg);
+    var_dump($apt);
+
+    /*
+    $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':user', $user, PDO::PARAM_STR);
     $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
@@ -23,4 +32,5 @@
     flush();
     header("Location:login_page.php");
     die();
+    */
 ?>
