@@ -51,8 +51,8 @@ $db = get_db();
                 <label for="major">Department</label><br>
                 <input type="text" id="major" name="degree"><br>
                 <label for="no">Pregnant?</label><br>
-                <input type="radio" id="no" value="No" name="preg" checked>No<br>
-                <input type="radio" id="yes" value="Yes" name="preg">Yes<br>
+                <input type="radio" id="no" value="False" name="preg" checked>No<br>
+                <input type="radio" id="yes" value="True" name="preg">Yes<br>
                 <label for="apt">Apartment Complex</label><br>
                 <input type="text" id="apt" name="home"><br>
                 <input type="submit" value="Join">
