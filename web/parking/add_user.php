@@ -9,14 +9,14 @@
     $major = htmlspecialchars($_POST['degree']);
     $preg = htmlspecialchars($_POST['preg']);
     $apt = htmlspecialchars($_POST['home']);
-    $query = "INSERT INTO member (username, pass_word, email, school_relation, major, pregnant, apt_name) VALUES (:user, :pass, :email, :relation, :major, :preg, :apt)";
+    $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, pregnant, apt_name) VALUES (:user, :pass, :email, :relation, :major, :preg, :apt)';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':user', $user, PDO::PARAM_STR);
     $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':relation', $relation, PDO::PARAM_STR);
     $stmt->bindValue(':major', $major, PDO::PARAM_STR);
-    $stmt->bindValue(':preg', $preg, PDO::PARAM_STR);
+    $stmt->bindValue(':preg', $preg, PDO::PARAM_BOOL);
     $stmt->bindValue(':apt', $apt, PDO::PARAM_STR);
     $result = $stmt->execute();
 
