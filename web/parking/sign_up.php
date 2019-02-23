@@ -33,28 +33,28 @@ $db = get_db();
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="add_user.php" submit="return Validate()">
+            <form action="add_user.php">
                 <label for="user">Username</label><br>
-                <input type="text" id="user"><br>
+                <input type="text" id="user" name="uzer"><br>
                 <label for="pass">Password</label><br>
-                <input type="text" id="pass"><br>
+                <input type="text" id="pass" name="passw"><br>
                 <label for="cpass">Confirm Password</label><br>
-                <input type="text" id="cpass"><br>
+                <input type="text" id="cpass" name="comfpass"><br>
                 <label for="email">Email</label><br>
-                <input type="text" id="email"><br>
+                <input type="text" id="email" name="e_mail"><br>
                 <label for="relation">School Relation</label><br>
-                <select name="" id="relation"><br>
-                    <option value="">Student</option>
-                    <option value="">Faculty</option>
-                    <option value="">Visitor</option>
+                <select name="" id="relation" name="member"><br>
+                    <option value="Student">Student</option>
+                    <option value="Faculty">Faculty</option>
+                    <option value="Visitor">Visitor</option>
                 </select><br>
                 <label for="major">Department</label><br>
-                <input type="text" id="major"><br>
+                <input type="text" id="major" name="degree"><br>
                 <label for="no">Pregnant?</label><br>
-                <input type="radio" id="no" name="preg" checked>No<br>
-                <input type="radio" id="yes" name="preg">Yes<br>
+                <input type="radio" id="no" value="No" name="preg" checked>No<br>
+                <input type="radio" id="yes" value="Yes" name="preg">Yes<br>
                 <label for="apt">Apartment Complex</label><br>
-                <input type="text" id="apt"><br>
+                <input type="text" id="apt" name="home"><br>
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
             </form>
