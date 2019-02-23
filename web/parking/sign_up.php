@@ -44,7 +44,7 @@ $db = get_db();
                 <input type="text" id="email" name="e_mail"><br>
                 <label for="relation">School Relation</label><br>
                 <select id="relation" name="member"><br>
-                    <option></option>
+                    <option>-------</option>
                     <option value="Student">Student</option>
                     <option value="Faculty">Faculty</option>
                     <option value="Visitor">Visitor</option>
