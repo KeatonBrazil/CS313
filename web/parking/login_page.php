@@ -19,12 +19,13 @@ if (isset($_POST['user']) && isset($_POST['pass']))
     if ($result)
     {
         $row = $stmt->fetch();
-        var_dump($row);
         $hashedPassword = $row['pass_word'];
 
         if (password_verify($password, $hashedPassword))
         {
             $_SESSION['username'] = $username;
+            header("Location: lot_view.php");
+            die();
         }
         else 
         {
