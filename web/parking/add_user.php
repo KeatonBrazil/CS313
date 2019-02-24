@@ -15,7 +15,7 @@
         header("Location: sign_up.php?fail=true");
         die();
     }
-    if ($pass === $comfpass) 
+    if ($pass != $comfpass) 
     {
         header("Location: sign_up.php?noMatch=true");
         die();        
