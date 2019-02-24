@@ -13,10 +13,10 @@
         header("Location: sign_up.php?fail=true");
         die();
     }
-/*
+
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
-    $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
-*/
+
+
     require_once("parking_db.php");
     $db = get_db();
 
@@ -24,7 +24,7 @@
     $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':user', $user, PDO::PARAM_STR);
-    $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
+    $stmt->bindValue(':pass', $hashedPassword, PDO::PARAM_STR);
     $stmt->bindValue(':email', $email, PDO::PARAM_STR);
     $stmt->bindValue(':relation', $relation, PDO::PARAM_STR);
     $stmt->bindValue(':major', $major, PDO::PARAM_STR);
