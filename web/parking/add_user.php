@@ -9,7 +9,7 @@
 
     if (!isset($user) || $user == "" || !isset($pass) || $pass == "" || !isset($email) || $email == "" || !isset($major) || $major == "")
     {
-        header("Location: sign_up.php?fail=true");
+        header("Location: sign_up.php");
         die();
     }
 
