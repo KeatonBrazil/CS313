@@ -15,12 +15,12 @@
         header("Location: sign_up.php?fail=true");
         die();
     }
-    if ($pass != $comfpass) 
+    if ($pass !== $cpass) 
     {
         header("Location: sign_up.php?noMatch=true");
         die();        
     }
-/*
+
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
 
 
@@ -42,5 +42,5 @@
     flush();
     header("Location:login_page.php");
     die();
-*/
+
 ?>
