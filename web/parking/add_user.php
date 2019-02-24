@@ -26,7 +26,7 @@
 
     require_once("parking_db.php");
     $db = get_db();
-/*
+
 
     $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
@@ -38,7 +38,8 @@
     $stmt->bindValue(':preg', $preg, PDO::PARAM_STR);
     $stmt->bindValue(':apt', $apt, PDO::PARAM_STR);
     $result = $stmt->execute();
-
+    var_dump($result);
+/*
     flush();
     header("Location:login_page.php");
     die();
