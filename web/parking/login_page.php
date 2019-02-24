@@ -1,7 +1,46 @@
 <?php
+session_start();
+
 
 require_once("parking_db.php");
 $db = get_db();
+
+$badLogin = false;
+
+if (isset($_POST['user']) && isset($_POST['pass']))
+{
+    $username = htmlspecialchars($_POST['user']);
+    $password = htmlspecialchars($_POST['pass']);
+
+    $query = 'SELECT pass_word FROM member WHERE username=:username';
+
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':username', $username);
+
+    $result = $statement->execute();
+
+    if ($result)
+    {
+        $row = $stmt->fetch();
+        var_dump($row);
+        $hashedPassword = $row['pass_word'];
+
+        if (password_verify($password, $hashedPassword))
+        {
+            $_SESSION['username'] = $username;
+        }
+        else 
+        {
+            $badLogin = true;
+        }
+    }
+    else
+    {
+        $badLogin = true;
+    }
+}
+
+
 
 ?>
 
@@ -36,17 +75,17 @@ $db = get_db();
         </nav>       
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="lot_view.php">
-            <div class="inner-addon left-addon">
-                <span class="glyphicon glyphicon-user"></span>      
-                <input type="text"  name="user" placeholder="Username"/>
-            </div><br>
-            <div class="inner-addon left-addon">
-                <span class="glyphicon glyphicon-lock"></span>      
-                <input type="password"  name="pass" placeholder="Password" />
-            </div><br>
-                <input type="submit" value="Login">
-            </form>
+                <form action="login_page.php" method="post">
+                    <div class="inner-addon left-addon">
+                        <span class="glyphicon glyphicon-user"></span>      
+                        <input type="text"  name="user" placeholder="Username"/>
+                    </div><br>
+                    <div class="inner-addon left-addon">
+                        <span class="glyphicon glyphicon-lock"></span>      
+                        <input type="password"  name="pass" placeholder="Password"/>
+                    </div><br>
+                    <input type="submit" value="Login">
+                </form>
             </div>
         </div>
         
