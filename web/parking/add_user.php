@@ -8,18 +8,23 @@
     $major = htmlspecialchars($_POST['degree']);
     $preg = htmlspecialchars($_POST['preg']);
     $apt = htmlspecialchars($_POST['home']);
+    var_dump($pass);
+    echo "<br>";
+    var_dump($cpass);
 
     if (!isset($user) || $user == "" || !isset($pass) || $pass == "" || !isset($email) || $email == "" || !isset($major) || $major == "")
     {
         header("Location: sign_up.php?fail=true");
         die();
     }
-    if ($pass != $comfpass) 
+    if ($pass !== $comfpass) 
     {
+        /*
         header("Location: sign_up.php?noMatch=true");
         die();
+        */
     }
-
+/*
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
 
 
@@ -41,5 +46,5 @@
     flush();
     header("Location:login_page.php");
     die();
-
+*/
 ?>
