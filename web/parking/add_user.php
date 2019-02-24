@@ -38,10 +38,9 @@
     $stmt->bindValue(':preg', $preg, PDO::PARAM_STR);
     $stmt->bindValue(':apt', $apt, PDO::PARAM_STR);
     $result = $stmt->execute();
-    var_dump($result);
-/*
+
     flush();
     header("Location:login_page.php");
     die();
-*/
+
 ?>
