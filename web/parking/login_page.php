@@ -12,11 +12,15 @@ if (isset($_POST['user']) && isset($_POST['pass']))
     $db = get_db();
 
     $query = 'SELECT pass_word FROM member WHERE username = :username';
-    var_dump($query);
+    var_dump();
+
+
+    $stmt = $db->prepare($query);
+    var_dump($stmt);
 }
 /*
-    $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username);
+
 
     $result = $statement->execute();
 
