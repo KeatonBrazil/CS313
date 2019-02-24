@@ -1,5 +1,16 @@
 <?php
 
+session_start();
+if (isset($_SESSION['username']))
+{
+	$username = $_SESSION['username'];
+}
+else
+{
+	header("Location: signIn.php");
+	die();
+}
+
 require_once("parking_db.php");
 $db = get_db();
 
@@ -32,7 +43,8 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <li><a href="lot_view.php">Parking</a></li>
                 <li class="active"><a href="enter_info.php">Check In</a></li>
                 <li><a href="checkout.php">Check Out</a></li>
-                <li><a href="reserve.php">Reserve</a></li>                
+                <li><a href="reserve.php">Reserve</a></li> 
+                <li><a href="sign_out.php">Sign Out</a></li>               
                 </ul>
             </div>
         </nav>
