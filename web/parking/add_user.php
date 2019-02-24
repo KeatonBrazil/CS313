@@ -6,15 +6,15 @@
     $major = htmlspecialchars($_POST['degree']);
     $preg = htmlspecialchars($_POST['preg']);
     $apt = htmlspecialchars($_POST['home']);
-
+/*
     if (!isset($user) || $user == "" || !isset($pass) || $pass == "" || !isset($email) || $email == "" || !isset($major) || $major == "")
     {
-        header("Location: sign_up.php");
+        header("Location: sign_up.php?fail=true");
         die();
     }
 
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
-
+*/
     require_once("parking_db.php");
     $db = get_db();
 
