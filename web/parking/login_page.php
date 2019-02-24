@@ -20,14 +20,14 @@ if (isset($_POST['user']) && isset($_POST['pass']))
     {
         $row = $stmt->fetch();
         $hashedPassword = $row['pass_word'];
-        var_dump($hashedPassword);
+        
         if (password_verify($password, $hashedPassword))
         {
             $_SESSION['username'] = $username;
-            /*
+            
             header("Location: lot_view.php");
             die();
-            */
+            
         }
         else 
         {
