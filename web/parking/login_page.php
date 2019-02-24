@@ -1,16 +1,15 @@
 <?php
 session_start();
 
-
-require_once("parking_db.php");
-$db = get_db();
-
 $badLogin = false;
 
 if (isset($_POST['user']) && isset($_POST['pass']))
 {
     $username = htmlspecialchars($_POST['user']);
     $password = htmlspecialchars($_POST['pass']);
+
+    require_once("parking_db.php");
+    $db = get_db();
 
     $query = 'SELECT pass_word FROM member WHERE username=:username';
 
@@ -84,6 +83,12 @@ if (isset($_POST['user']) && isset($_POST['pass']))
                         <span class="glyphicon glyphicon-lock"></span>      
                         <input type="password"  name="pass" placeholder="Password"/>
                     </div><br>
+                    <?php
+                        if ($badLogin)
+                        {
+                            echo "<span style='color:red;'>Incorrect username or password!</span><br /><br />\n";
+                        }
+                    ?>
                     <input type="submit" value="Login">
                 </form>
             </div>
