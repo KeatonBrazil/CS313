@@ -43,6 +43,13 @@ $db = get_db();
             <form action="add_user.php" method="post">
                 <label for="user">Username<span style='color:red;'>*</span></label><br>
                 <input type="text" id="user" name="uzer"><br>
+                <?php
+                $noMatch = $_GET['noMatch'];
+                if ($noMatch)
+                {
+                    echo "<span style='color:red;'>The passwords don't match.</span><br>";
+                }
+                ?>
                 <label for="pass">Password<span style='color:red;'>*</span></label><br>
                 <input type="text" id="pass" name="passw"><br>
                 <label for="cpass">Confirm Password<span style='color:red;'>*</span></label><br>

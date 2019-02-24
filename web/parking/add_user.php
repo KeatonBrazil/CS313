@@ -2,6 +2,7 @@
 
     $user = htmlspecialchars($_POST['uzer']);
     $pass = htmlspecialchars($_POST['passw']);
+    $cpass = htmlspecialchars($_POST['comfpass']);
     $email = htmlspecialchars($_POST['e_mail']);
     $relation = htmlspecialchars($_POST['member']);
     $major = htmlspecialchars($_POST['degree']);
@@ -11,6 +12,11 @@
     if (!isset($user) || $user == "" || !isset($pass) || $pass == "" || !isset($email) || $email == "" || !isset($major) || $major == "")
     {
         header("Location: sign_up.php?fail=true");
+        die();
+    }
+    if ($pass !== $comfpass) 
+    {
+        header("Location: sign_up.php?noMatch=true");
         die();
     }
 
