@@ -75,6 +75,13 @@ if (isset($_POST['user']) && isset($_POST['pass']))
         </nav>       
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
+                <?php
+                    $success = $_GET['success'];
+                    if ($success)
+                    {
+                        echo "Congratulations! Your account was successfully created.";
+                    }
+                ?>
                 <form action="login_page.php" method="post">
                     <div class="inner-addon left-addon">
                         <span class="glyphicon glyphicon-user"></span>      

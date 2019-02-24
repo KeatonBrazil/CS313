@@ -40,7 +40,7 @@
     $result = $stmt->execute();
 
     flush();
-    header("Location:login_page.php");
+    header("Location:login_page.php?success=true");
     die();
 
 ?>
