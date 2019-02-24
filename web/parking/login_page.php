@@ -24,8 +24,10 @@ if (isset($_POST['user']) && isset($_POST['pass']))
         if (password_verify($password, $hashedPassword))
         {
             $_SESSION['username'] = $username;
+            /*
             header("Location: lot_view.php");
             die();
+            */
         }
         else 
         {
