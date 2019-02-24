@@ -19,9 +19,9 @@
         header("Location: sign_up.php?fail=true");
         die();
     }
-/*
-    $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
 
+    $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
+*/
     require_once("parking_db.php");
     $db = get_db();
 

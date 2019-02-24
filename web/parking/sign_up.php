@@ -33,6 +33,13 @@ $db = get_db();
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
+            <?php
+                $fail = $_GET['fail'];
+                if ($fail)
+                {
+                    echo "<span style='color:red;'>Please fill in the starred fields.</span>";
+                }
+            ?>
             <form action="add_user.php" method="post">
                 <label for="user">Username<span style='color:red;'>*</span></label><br>
                 <input type="text" id="user" name="uzer"><br>
@@ -58,13 +65,7 @@ $db = get_db();
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
             </form>
-            <?php
-                $fail = $_GET['fail'];
-                if ($fail)
-                {
-                    echo "<span style='color:red;'>Please fill in the starred sections.</span>";
-                }
-            ?>
+            
             </div>
         </div>
         
