@@ -6,6 +6,13 @@
     $major = htmlspecialchars($_POST['degree']);
     $preg = htmlspecialchars($_POST['preg']);
     $apt = htmlspecialchars($_POST['home']);
+    var_dump($user);
+    var_dump($pass);
+    var_dump($email);
+    var_dump($relation);
+    var_dump($major);
+    var_dump($preg);
+    var_dump($apt);
 /*
     if (!isset($user) || $user == "" || !isset($pass) || $pass == "" || !isset($email) || $email == "" || !isset($major) || $major == "")
     {
@@ -14,7 +21,7 @@
     }
 
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
-*/
+
     require_once("parking_db.php");
     $db = get_db();
 
@@ -33,4 +40,5 @@
     flush();
     header("Location:login_page.php");
     die();
+*/
 ?>
