@@ -15,9 +15,7 @@ if (isset($_POST['user']) && isset($_POST['pass']))
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username);
     $result = $stmt->execute();
-    var_dump($result);
-}
-/*
+
     if ($result)
     {
         $row = $stmt->fetch();
