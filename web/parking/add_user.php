@@ -23,10 +23,10 @@
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
     echo "<br>";
     var_dump($hashedPassword);
-/*
+
     require_once("parking_db.php");
     $db = get_db();
-
+/*
 
     $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
