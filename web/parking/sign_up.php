@@ -34,22 +34,21 @@ $db = get_db();
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
             <form action="add_user.php" method="post">
-                <label for="user">Username</label><br>
+                <label for="user">Username<span style='color:red;'>*</span></label><br>
                 <input type="text" id="user" name="uzer"><br>
-                <label for="pass">Password</label><br>
+                <label for="pass">Password<span style='color:red;'>*</span></label><br>
                 <input type="text" id="pass" name="passw"><br>
-                <label for="cpass">Confirm Password</label><br>
+                <label for="cpass">Confirm Password<span style='color:red;'>*</span></label><br>
                 <input type="text" id="cpass" name="comfpass"><br>
-                <label for="email">Email</label><br>
+                <label for="email">Email<span style='color:red;'>*</span></label><br>
                 <input type="text" id="email" name="e_mail"><br>
-                <label for="relation">School Relation</label><br>
+                <label for="relation">School Relation<span style='color:red;'>*</span></label><br>
                 <select id="relation" name="member"><br>
-                    <option>-------</option>
                     <option value="Student">Student</option>
                     <option value="Faculty">Faculty</option>
                     <option value="Visitor">Visitor</option>
                 </select><br>
-                <label for="major">Department</label><br>
+                <label for="major">Department<span style='color:red;'>*</span></label><br>
                 <input type="text" id="major" name="degree"><br>
                 <label for="no">Pregnant?</label><br>
                 <input type="radio" id="no" value="False" name="preg" checked>No<br>
@@ -59,6 +58,13 @@ $db = get_db();
                 <input type="submit" value="Join">
                 <input type="reset" value="Reset">
             </form>
+            <?php
+                $fail = $_GET['fail'];
+                if ($fail)
+                {
+                    echo "<span style='color:red;'>Please fill in the starred sections.</span>";
+                }
+            ?>
             </div>
         </div>
         
