@@ -44,6 +44,7 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li><a href="enter_info.php">Check In</a></li>
                 <li><a href="checkout.php">Check Out</a></li>
                 <li><a href="reserve.php">Reserve</a></li>
+                <li><a href="sign_out.php">Sign Out</a></li>
                 </ul>
             </div>
         </nav>
