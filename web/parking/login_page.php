@@ -7,10 +7,7 @@ if (isset($_POST['user']) && isset($_POST['pass']))
 {
     $username = htmlspecialchars($_POST['user']);
     $password = htmlspecialchars($_POST['pass']);
-    var_dump($username);
-    var_dump($password);
-}
-/*
+
     require_once("parking_db.php");
     $db = get_db();
 
@@ -20,7 +17,8 @@ if (isset($_POST['user']) && isset($_POST['pass']))
     $stmt->bindValue(':username', $username);
 
     $result = $statement->execute();
-
+}
+/*
     if ($result)
     {
         $row = $stmt->fetch();
