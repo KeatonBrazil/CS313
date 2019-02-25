@@ -55,8 +55,8 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <select name="plot" id="lot">
                     <option value="Taylor">Taylor</option>
                     <option value="Benson">Benson</option>
-                    <option value="Kymball">Kymball</option>
-                    <option value="Kymball">Kymball</option>
+                    <option value="Kimball">Kimball</option>
+                    <option value="Kimball">Kimball</option>
                     <option value="STC">STC</option>
                 </select><br>
                 <label for="pass">Parking Pass</label><br>
