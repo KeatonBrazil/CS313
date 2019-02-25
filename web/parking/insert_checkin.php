@@ -28,8 +28,9 @@ $stmt = $db->prepare($query2);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $member_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-/*
+
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
+/*
 $statement = $db->prepare($query3);
 $statement->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
 $statement->bindValue(':member_id', $member_id, PDO::PARAM_INT);
