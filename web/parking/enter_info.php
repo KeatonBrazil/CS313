@@ -42,9 +42,9 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
-        <script>
-            function pass(x) {
-                var doc = x;
+        <script type="text/javascript">
+            function pass() {
+                var doc = document.getElementById("lot");
                 var docn = document.getElementById("north");
                 var docs = document.getElementById("south"); 
                 var doca = document.getElementById("admin");
@@ -94,7 +94,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot" onchange="pass(this)">
+                <select name="plot" id="lot" onchange="pass()">
                     <option value="Taylor">Taylor</option>
                     <option value="STC">STC</option>
                     <option value="Snow">Snow</option>
