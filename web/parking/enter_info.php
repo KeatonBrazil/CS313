@@ -44,8 +44,11 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="parking.css">
         <script>
             function pass() {
-                var doc = document.getElementById("pass"), docn = document.getElementById("north"), 
-                docs = document.getElementById("south"), doca = document.getElementById("admin");
+                var doc = document.getElementById("pass");
+                var docn = document.getElementById("north");
+                var docs = document.getElementById("south"); 
+                var doca = document.getElementById("admin");
+                console.log(doc.value)
                 if (doc.value === "Taylor") {
                     docn.style.display = 'inline';
                     docs.style.display = 'none';
