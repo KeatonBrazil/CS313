@@ -41,8 +41,7 @@ echo "<br>";
 var_dump($username);
 echo "<br>";
 echo "<br>";
-var_dump($member_id[0][0]);
-echo "<br>";
+echo $member_id[0];
 
 
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
