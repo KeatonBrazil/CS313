@@ -79,7 +79,7 @@ if (isset($_POST['user']) && isset($_POST['pass']))
                     $success = $_GET['success'];
                     if ($success)
                     {
-                        echo "<strong>Congratulations! Your account was successfully created.<strong><br><br>";
+                        echo "<strong>Congratulations! Your account was successfully created.</strong><br><br>";
                     }
                 ?>
                 <form action="login_page.php" method="post">

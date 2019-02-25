@@ -21,12 +21,12 @@ $statement->execute();
 $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 $query1 = "SELECT DISTINCT lot_location FROM parking_lot";
-$statement = $db->prepare($query);
+$statement = $db->prepare($query1);
 $statement->execute();
 $lots = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 $query2 = "SELECT DISTINCT parking_pass FROM parking_lot";
-$statement = $db->prepare($query);
+$statement = $db->prepare($query2);
 $statement->execute();
 $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
 
