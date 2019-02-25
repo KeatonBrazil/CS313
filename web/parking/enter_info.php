@@ -14,7 +14,7 @@ else
 require_once("parking_db.php");
 $db = get_db();
 
-$query = "SELECT lot_location, parking_pass, to_char(start_at_date, 'Month DD YYYY') AS start_date, to_char(start_at_time, 'HH24:MI') AS start_time FROM parking_info JOIN parking_lot USING(lot_id) JOIN member USING(member_id) WHERE username=$username ORDER BY info_id DESC";
+$query = "SELECT lot_location, parking_pass, to_char(start_at_date, 'Month DD YYYY') AS start_date, to_char(start_at_time, 'HH24:MI') AS start_time FROM parking_info JOIN parking_lot USING(lot_id) ORDER BY info_id DESC";
 $statement = $db->prepare($query);
 $statement->execute();
 $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
