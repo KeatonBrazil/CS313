@@ -2,7 +2,7 @@ function change(x) {
     var docn = document.getElementById("north");
     var docs = document.getElementById("south"); 
     var doca = document.getElementById("admin");
-    console.log(doc.value)
+    console.log(x);
     if (x === "Taylor") {
         docn.style.display = 'inline';
         docs.style.display = 'none';
