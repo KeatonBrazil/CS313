@@ -43,13 +43,11 @@ echo "<br>";
 echo "<br>";
 echo $member_id[0];
 
-
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
 $stmt = $db->prepare($query3);
 $stmt->bindValue(':lot_id', $lot_id[0], PDO::PARAM_INT);
 $stmt->bindValue(':member_id', $member_id[0], PDO::PARAM_INT);
 $result = $stmt->execute();
-
 
 flush();
 header("Location:enter_info.php");
