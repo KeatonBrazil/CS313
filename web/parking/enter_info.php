@@ -20,10 +20,17 @@ $statement->bindValue(':username', $username, PDO::PARAM_STR);
 $statement->execute();
 $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-$query1 = $query = "SELECT lot_location, parking_pass FROM parking_lot";
+$query1 = "SELECT DISTINCT lot_location FROM parking_lot";
 $statement = $db->prepare($query);
 $statement->execute();
 $lots = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+$query2 = "SELECT DISTINCT parking_pass FROM parking_lot";
+$statement = $db->prepare($query);
+$statement->execute();
+$passes = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -69,8 +76,8 @@ $lots = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <label for="pass">Parking Pass</label><br>
                 <select name="ppass" id="pass">
                     <?php
-                        foreach ($lots as $lot) {
-                            $ppass = $lot['parking_pass'];
+                        foreach ($passes as $pass) {
+                            $ppass = $pass['parking_pass'];
                             echo "<option value=' " . $ppass . " '>$ppass</option>";
                         }
                     ?>
