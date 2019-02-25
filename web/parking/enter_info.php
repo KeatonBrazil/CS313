@@ -93,7 +93,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot" onchange="pass(this.value)">
+                <select name="plot" id="lot" onChange="pass(this.value)">
                     <option value="Taylor">Taylor</option>
                     <option value="STC">STC</option>
                     <option value="Snow">Snow</option>
