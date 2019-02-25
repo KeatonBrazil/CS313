@@ -22,20 +22,21 @@ $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
 $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
 $stmt->execute();
 $lot_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+var_dump($lot_id);
 $query2 = 'SELECT member_id FROM member WHERE username=:username';
 $stmt = $db->prepare($query2);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $member_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+var_dump($member_id);
+var_dump($username);
+/*
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
 $statement = $db->prepare($query3);
 $statement->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
 $statement->bindValue(':member_id', $member_id, PDO::PARAM_INT);
 $result = $statement->execute();
-var_dump($result);
-/*
+
 flush();
 header("Location:enter_info.php");
 die();
