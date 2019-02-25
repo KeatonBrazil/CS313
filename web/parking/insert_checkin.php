@@ -33,11 +33,8 @@ $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member
 $statement = $db->prepare($query3);
 $statement->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
 $statement->bindValue(':member_id', $member_id, PDO::PARAM_INT);
-
-/*
 $result = $statement->execute();
-var_dump($result)
-*/
+var_dump($result);
 /*
 flush();
 header("Location:enter_info.php");
