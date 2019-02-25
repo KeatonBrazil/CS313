@@ -61,6 +61,13 @@ $db = get_db();
                 <input type="text" id="pass" name="passw"><br>
                 <label for="cpass">Confirm Password<span style='color:red;'>*</span></label><br>
                 <input type="text" id="cpass" name="comfpass"><br>
+                <?php
+                $e_exists = $_GET['e_exists'];
+                if ($e_exists)
+                {
+                    echo "<span style='color:red;'>This email is taken.</span><br>";
+                }
+                ?>
                 <label for="email">Email<span style='color:red;'>*</span></label><br>
                 <input type="text" id="email" name="e_mail"><br>
                 <label for="relation">School Relation<span style='color:red;'>*</span></label><br>

@@ -40,6 +40,19 @@
         }
     }
 
+    $user_query = 'SELECT email FROM member';
+    $statement = $db->prepare($user_query);
+    $statement->execute();
+    $emails = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($emails as $mail) {
+        $old_email = $mail['email'];
+        if ($email === $old_email) {
+            header("Location: sign_up.php?e_exists=true");
+            die();
+        }
+    }
+
     $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':user', $user, PDO::PARAM_STR);
