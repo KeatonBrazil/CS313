@@ -30,13 +30,9 @@ $stmt->execute();
 $member_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
-
 $stmt = $db->prepare($query3);
-
-$stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
-
-$stmt->bindValue(':member_id', $member_id, PDO::PARAM_INT);
-
+$stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_STR);
+$stmt->bindValue(':member_id', $member_id, PDO::PARAM_STR);
 $result = $stmt->execute();
 
 /*

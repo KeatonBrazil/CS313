@@ -29,7 +29,7 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
-        <script src="main.js"></script>
+        <script></script>
     </head>
     <body>
         <div>
@@ -64,9 +64,7 @@ $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $lot_pass = $lot['parking_pass'];
                         
                         echo "<tr><td><a href='lot_detail.php?lot_id=$id'>$lot_loc</a></td><td>$lot_pass</td></tr>";
-                    }
-
-                    
+                    }                    
                 ?>
                 </table>
             </div>
