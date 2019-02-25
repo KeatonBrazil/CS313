@@ -42,7 +42,33 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
-        <script></script>
+        <script>
+            function pass() {
+                var doc = document.getElementById("pass"), docn = document.getElementById("north"), 
+                docs = document.getElementById("south"), doca = document.getElementById("admin");
+                if (doc.value === "Taylor") {
+                    docn.style.display = 'inline';
+                    docs.style.display = 'none';
+                    doca.style.display = 'none';
+                } else if (doc.value === "STC") {
+                    docn.style.display = 'none';
+                    docs.style.display = 'inline';
+                    doca.style.display = 'none';
+                } else if (doc.value === "Snow") {
+                    docn.style.display = 'none';
+                    docs.style.display = 'none';
+                    doca.style.display = 'inline';
+                } else if (doc.value === "Kimball") {
+                    docn.style.display = 'inline';
+                    docs.style.display = 'none';
+                    doca.style.display = 'inline';
+                } else if (doc.value === "I-Center") {
+                    docn.style.display = 'inline';
+                    docs.style.display = 'none';
+                    doca.style.display = 'none';
+                }
+            }
+        </script>
     </head>
     <body>
         <div>
@@ -65,16 +91,18 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot">
-                
+                <select name="plot" id="lot" onchange="pass()">
                     <option value="Taylor">Taylor</option>
-                    
+                    <option value="STC">STC</option>
+                    <option value="Snow">Snow</option>
+                    <option value="Kimball">Kimball</option>
+                    <option value="I-Center">I-Center</option>
                 </select><br>
                 <label for="pass">Parking Pass</label><br>
                 <select name="ppass" id="pass">
-                
-                    <option value="North">North</option>
-                                   
+                    <option id="north" value="North">North</option>
+                    <option id="south" value="South">South</option>
+                    <option id="admin" value="Admin">Admin</option>
                 </select><br>
                 <input type="submit" value="Submit">
             </form>
