@@ -41,6 +41,13 @@ $db = get_db();
                 }
             ?>
             <form action="add_user.php" method="post">
+                <?php
+                $exists = $_GET['exists'];
+                if ($exists)
+                {
+                    echo "<span style='color:red;'>This username is taken.</span><br>";
+                }
+                ?>
                 <label for="user">Username<span style='color:red;'>*</span></label><br>
                 <input type="text" id="user" name="uzer"><br>
                 <?php
