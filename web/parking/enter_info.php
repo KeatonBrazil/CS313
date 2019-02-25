@@ -42,35 +42,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
-        <script type="text/javascript">
-            function pass(x) {
-                var docn = document.getElementById("north");
-                var docs = document.getElementById("south"); 
-                var doca = document.getElementById("admin");
-                console.log(doc.value)
-                if (x === "Taylor") {
-                    docn.style.display = 'inline';
-                    docs.style.display = 'none';
-                    doca.style.display = 'none';
-                } else if (x === "STC") {
-                    docn.style.display = 'none';
-                    docs.style.display = 'inline';
-                    doca.style.display = 'none';
-                } else if (x === "Snow") {
-                    docn.style.display = 'none';
-                    docs.style.display = 'none';
-                    doca.style.display = 'inline';
-                } else if (x === "Kimball") {
-                    docn.style.display = 'inline';
-                    docs.style.display = 'none';
-                    doca.style.display = 'inline';
-                } else if (x === "I-Center") {
-                    docn.style.display = 'inline';
-                    docs.style.display = 'none';
-                    doca.style.display = 'none';
-                };
-            };
-        </script>
+        <script type="text/javascript" src="parking.js"></script>
     </head>
     <body>
         <div>
@@ -93,7 +65,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot" onChange="pass(this.value)">
+                <select name="plot" id="lot" onchange="change(this.value)">
                     <option value="Taylor">Taylor</option>
                     <option value="STC">STC</option>
                     <option value="Snow">Snow</option>
