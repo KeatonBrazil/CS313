@@ -26,21 +26,23 @@ $stmt = $db->prepare($query1);
 $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
 $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
 $stmt->execute();
-$lot_id = $stmt->fetch(PDO::FETCH_ASSOC);
-var_dump($lot_id[0]);
+$lot_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
+var_dump($lot_id);
 echo "<br>";
 echo "<br>";
 $query2 = 'SELECT member_id FROM member WHERE username=:username';
 $stmt = $db->prepare($query2);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
-$member_id = $stmt->fetch(PDO::FETCH_ASSOC);
-var_dump($member_id[0]);
+$member_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
+var_dump($member_id);
 echo "<br>";
 echo "<br>";
 var_dump($username);
 echo "<br>";
 echo "<br>";
+
+print_r($member_id);
 /*
 $query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
 $stmt = $db->prepare($query3);
