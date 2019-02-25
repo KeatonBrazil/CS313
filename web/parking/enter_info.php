@@ -50,7 +50,7 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
         </nav>
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">
-            <form action="insert_checkin.php">
+            <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
                 <select name="plot" id="lot">
                     <option value="Taylor">Taylor</option>
