@@ -15,8 +15,6 @@ $db = get_db();
 
 $lot = htmlspecialchars($_POST['plot']);
 $pass = htmlspecialchars($_POST['ppass']);
-$start_date = htmlspecialchars($_POST['sdate']);
-$start_time = htmlspecialchars($_POST['stime'])
 
 $query1 = 'SELECT lot_id FROM parking_lot WHERE lot_location=:lot AND parking_pass=:pass';
 $stmt = $db->prepare($query1);
