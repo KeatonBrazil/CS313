@@ -12,6 +12,16 @@ else
 
     require_once("parking_db.php");
     $db = get_db();
+
+    $lot_id = $_GET['lot_id'];
+    $lot_loc = $_GET['lot_loc'];
+    $lot_pass = $_GET['lot_pass'];
+
+    $query = 'SELECT COUNT(info_id) AS capacity FROM parking_info WHERE lot_id=:lot_id';
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $lot = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +50,7 @@ else
         </nav>      
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">  
-
+                <h2>Spots available at <?php echo "$lot_loc - $lot_pass"; ?></h2>
             </div>
         </div>
     </body>
