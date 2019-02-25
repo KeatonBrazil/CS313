@@ -27,6 +27,18 @@
     require_once("parking_db.php");
     $db = get_db();
 
+    $user_query = 'SELECT username FROM member';
+    $statement = $db->prepare($user_query);
+    $statement->execute();
+    $names = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    foreach ($names as $name) {
+        $old_user = $name['username'];
+        if ($user === $old_user) {
+            header("Location: sign_up.php?exists=true");
+            die();
+        }
+    }
 
     $query = 'INSERT INTO member (username, pass_word, email, school_relation, major, apt_name, pregnant) VALUES (:user, :pass, :email, :relation, :major, :apt, :preg)';
     $stmt = $db->prepare($query);
