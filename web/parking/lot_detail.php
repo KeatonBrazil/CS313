@@ -1,4 +1,15 @@
 <?php
+session_start();
+if (isset($_SESSION['username']))
+{
+	$username = $_SESSION['username'];
+}
+else
+{
+	header("Location: login_page.php");
+	die();
+}
+
     require_once("parking_db.php");
     $db = get_db();
 ?>
@@ -26,6 +37,11 @@
                     <li><a href="lot_view.php">Parking</a></li>
                 </ul>
             </div>
-        </nav>        
+        </nav>      
+        <div class="col-md-4 col-md-offset-4">
+            <div class="my_layout">  
+
+            </div>
+        </div>
     </body>
 </html>

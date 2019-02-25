@@ -7,7 +7,7 @@ if (isset($_SESSION['username']))
 }
 else
 {
-	header("Location: signIn.php");
+	header("Location: login_page.php");
 	die();
 }
 
@@ -65,10 +65,6 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <option value="South">South</option>
                     <option value="Admin">Administrator</option>
                 </select><br>
-                <label for="start_time">Arrival Time</label><br>
-                <input type="time" name="stime" id="start_time"><br>
-                <label for="start_date">Arrival Date</label><br>
-                <input type="date" name="sdate" id="start_date"><br><br>
                 <input type="submit" value="Submit">
             </form>
             </div><br><br>
