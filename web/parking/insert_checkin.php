@@ -15,7 +15,7 @@ $db = get_db();
 
 $lot = htmlspecialchars($_POST['plot']);
 $pass = htmlspecialchars($_POST['ppass']);
-
+/*
 $query1 = 'SELECT lot_id FROM parking_lot WHERE lot_location=:lot AND parking_pass=:pass';
 $stmt = $db->prepare($query1);
 $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
@@ -34,7 +34,7 @@ $statement = $db->prepare($query3);
 $statement->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
 $statement->bindValue(':member_id', $member_id, PDO::PARAM_INT);
 $result = $statement->execute();
-
+*/
 flush();
 header("Location:enter_info.php");
 die();
