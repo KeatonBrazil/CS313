@@ -43,29 +43,28 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="parking.css">
         <script type="text/javascript">
-            function pass() {
-                var doc = document.getElementById("lot");
+            function pass(x) {
                 var docn = document.getElementById("north");
                 var docs = document.getElementById("south"); 
                 var doca = document.getElementById("admin");
                 console.log(doc.value)
-                if (doc.value === "Taylor") {
+                if (x === "Taylor") {
                     docn.style.display = 'inline';
                     docs.style.display = 'none';
                     doca.style.display = 'none';
-                } else if (doc.value === "STC") {
+                } else if (x === "STC") {
                     docn.style.display = 'none';
                     docs.style.display = 'inline';
                     doca.style.display = 'none';
-                } else if (doc.value === "Snow") {
+                } else if (x === "Snow") {
                     docn.style.display = 'none';
                     docs.style.display = 'none';
                     doca.style.display = 'inline';
-                } else if (doc.value === "Kimball") {
+                } else if (x === "Kimball") {
                     docn.style.display = 'inline';
                     docs.style.display = 'none';
                     doca.style.display = 'inline';
-                } else if (doc.value === "I-Center") {
+                } else if (x === "I-Center") {
                     docn.style.display = 'inline';
                     docs.style.display = 'none';
                     doca.style.display = 'none';
@@ -94,7 +93,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot" onchange="pass()">
+                <select name="plot" id="lot" onchange="pass(this.value)">
                     <option value="Taylor">Taylor</option>
                     <option value="STC">STC</option>
                     <option value="Snow">Snow</option>
