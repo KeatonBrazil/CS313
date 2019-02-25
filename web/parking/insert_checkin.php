@@ -15,14 +15,14 @@ $db = get_db();
 
 $lot = htmlspecialchars($_POST['plot']);
 $pass = htmlspecialchars($_POST['ppass']);
-/*
+
 $query1 = 'SELECT lot_id FROM parking_lot WHERE lot_location=:lot AND parking_pass=:pass';
 $stmt = $db->prepare($query1);
 $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
 $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
 $stmt->execute();
 $lot_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+/*
 $query2 = 'SELECT member_id FROM member WHERE username=:username';
 $stmt = $db->prepare($query2);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
