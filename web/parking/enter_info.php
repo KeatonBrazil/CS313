@@ -19,6 +19,11 @@ $statement = $db->prepare($query);
 $statement->bindValue(':username', $username, PDO::PARAM_STR);
 $statement->execute();
 $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+$query1 = $query = "SELECT lot_location, parking_pass FROM parking_lot";
+$statement = $db->prepare($query);
+$statement->execute();
+$lots = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -54,17 +59,21 @@ $logs = $statement->fetchAll(PDO::FETCH_ASSOC);
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
                 <select name="plot" id="lot">
-                    <option value="Taylor">Taylor</option>
-                    <option value="Benson">Benson</option>
-                    <option value="Kimball">Kimball</option>
-                    <option value="Kimball">Kimball</option>
-                    <option value="STC">STC</option>
+                    <?php
+                        foreach ($lots as $lot) {
+                            $location = $lot['lot_location'];
+                            echo "<option value=' " . $location . " '>$location</option>";                        
+                        }
+                    ?>
                 </select><br>
                 <label for="pass">Parking Pass</label><br>
                 <select name="ppass" id="pass">
-                    <option value="North">North</option>
-                    <option value="South">South</option>
-                    <option value="Admin">Administrator</option>
+                    <?php
+                        foreach ($lots as $lot) {
+                            $ppass = $lot['parking_pass'];
+                            echo "<option value=' " . $ppass . " '>$ppass</option>";
+                        }
+                    ?>
                 </select><br>
                 <input type="submit" value="Submit">
             </form>
