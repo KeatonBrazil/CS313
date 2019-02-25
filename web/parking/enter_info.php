@@ -66,21 +66,28 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
                 <select name="plot" id="lot">
+                    <option value="Taylor">Taylor</option>
                     <?php
+                    /*
                         foreach ($lots as $lot) {
                             $location = $lot['lot_location'];
                             echo "<option value=' " . $location . " '>$location</option>";                        
                         }
+                        */
                     ?>
                 </select><br>
                 <label for="pass">Parking Pass</label><br>
                 <select name="ppass" id="pass">
+                    <option value="North">North</option>
                     <?php
+                    /*
                         foreach ($passes as $pass) {
                             $ppass = $pass['parking_pass'];
                             echo "<option value=' " . $ppass . " '>$ppass</option>";
                         }
+                    */
                     ?>
+                    
                 </select><br>
                 <input type="submit" value="Submit">
             </form>
