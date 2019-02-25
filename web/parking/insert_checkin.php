@@ -15,7 +15,12 @@ $db = get_db();
 
 $lot = htmlspecialchars($_POST['plot']);
 $pass = htmlspecialchars($_POST['ppass']);
-
+var_dump($lot);
+echo "<br>";
+echo "<br>";
+var_dump($pass);
+echo "<br>";
+echo "<br>";
 $query1 = 'SELECT lot_id FROM parking_lot WHERE lot_location=:lot AND parking_pass=:pass';
 $stmt = $db->prepare($query1);
 $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
