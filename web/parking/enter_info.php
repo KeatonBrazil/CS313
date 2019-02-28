@@ -44,7 +44,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
         <link rel="stylesheet" href="parking.css">
         <script type="text/javascript" src="parking.js"></script>
     </head>
-    <body>
+    <body onload="change()">
         <div>
             <header class="parking_center">
                 <h1>BYU-I Parking</h1>
@@ -65,7 +65,7 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
             <div class="my_layout">
             <form action="insert_checkin.php" method="post">
                 <label for="lot">Parking Lot</label><br>
-                <select name="plot" id="lot" onchange="change(this.value)">
+                <select name="plot" id="lot" onchange="change()">
                     <option value="Taylor">Taylor</option>
                     <option value="STC">STC</option>
                     <option value="Snow">Snow</option>

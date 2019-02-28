@@ -1,4 +1,5 @@
 function change(x) {
+    var x = document.getElementById("lot").value;
     var docn = document.getElementById("north");
     var docs = document.getElementById("south"); 
     var doca = document.getElementById("admin");
