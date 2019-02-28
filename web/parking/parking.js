@@ -1,6 +1,5 @@
 function change(x) {
     var doc = document.getElementById("pass");
-    console.log(x);
     if (x === "Taylor") {
         doc.innerHTML = "<option value='North'>North</option>";
     } else if (x === "STC") {
