@@ -36,7 +36,7 @@ $stmt->bindValue(':member_id', $member_id[0]['member_id'], PDO::PARAM_INT);
 $result = $stmt->execute();
 
 flush();
-header("Location:enter_info.php");
+header("Location:enter_info.php?lot_id=$lot_id[0]['lot_id']");
 die();
 
 ?>
