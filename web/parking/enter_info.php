@@ -78,6 +78,12 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <option id="south" value="South">South</option>
                     <option id="admin" value="Admin">Admin</option>
                 </select><br><br><br>
+                <?php 
+                    $fail = $GET['fail'];
+                    if ($fail) {
+                        echo "<span style='color:red;'>There are currently no spots available.</span>";
+                    }
+                ?>
                 <input type="submit" value="Submit">
             </form>
             </div><br><br>
