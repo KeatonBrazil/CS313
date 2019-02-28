@@ -65,7 +65,7 @@ else
             <div class="my_layout">  
                 <h2><?php echo "Spots available at $lot_loc - $lot_pass parking"; ?></h2>
                 <?php 
-                    echo "$cap['capacity']";
+                    //echo "$cap['capacity']";
                 ?>
             </div>
         </div>
