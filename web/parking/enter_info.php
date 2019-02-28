@@ -74,9 +74,6 @@ $passes = $statement->fetchAll(PDO::FETCH_ASSOC);
                 </select><br>
                 <label for="pass">Parking Pass</label><br>
                 <select name="ppass" id="pass">
-                    <option id="north" value="North">North</option>
-                    <option id="south" value="South">South</option>
-                    <option id="admin" value="Admin">Admin</option>
                 </select><br><br><br>
                 <input type="submit" value="Submit">
             </form>

@@ -1,27 +1,15 @@
 function change(x) {
-    var docn = document.getElementById("north");
-    var docs = document.getElementById("south"); 
-    var doca = document.getElementById("admin");
+    var doc = document.getElementById("pass");
     console.log(x);
     if (x === "Taylor") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'none';
+        doc.innerHTML = "<option value='North'>North</option>";
     } else if (x === "STC") {
-        docn.style.display = 'none';
-        docs.style.display = 'inline';
-        doca.style.display = 'none';
+        doc.innerHTML = "<option value='South'>South</option>";
     } else if (x === "Snow") {
-        docn.style.display = 'none';
-        docs.style.display = 'none';
-        doca.style.display = 'inline';
+        doc.innerHTML = "<option value='Admin'>North</option>"; 
     } else if (x === "Kimball") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'inline';
+        doc.innerHTML = "<option value='North'>North</option><option value='Admin'>Admin</option>";
     } else if (x === "I-Center") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'none';
+        doc.innerHTML = "<option value='North'>North</option>";
     };
 };
