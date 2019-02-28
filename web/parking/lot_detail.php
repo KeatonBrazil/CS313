@@ -17,17 +17,23 @@ else
     $lot_loc = $_GET['lot_loc'];
     $lot_pass = $_GET['lot_pass'];
 
-    $query = 'SELECT COUNT(info_id) AS capacity FROM parking_info WHERE lot_id=:lot_id';
+    $query = 'SELECT COUNT(info_id) AS cap FROM parking_info WHERE lot_id=:lot_id AND end_at_date=NULL' ;
     $stmt = $db->prepare($query);
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
     $lot = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-    $query = 'SELECT end_at_date, end_at_time FROM parking_info WHERE lot_id=:lot_id';
+    /*
+    $query = 'SELECT end_at_date, end_at_time FROM parking_info WHERE lot_id=:lot_id AND end_at_date';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
     $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    */
+    $query = 'SELECT capacity FROM parking_lot WHERE lot_id=:lot_id';
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
+    $stmt->execute();
+    $cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -58,10 +64,7 @@ else
             <div class="my_layout">  
                 <h2><?php echo "Spots available at $lot_loc - $lot_pass parking"; ?></h2>
                 <?php 
-                    /*if (!isset($lots['end_at_date'])) {
-
-
-                    }*/
+                    echo "$lot['cap'] / $cap['capacity']";
                 ?>
             </div>
         </div>
