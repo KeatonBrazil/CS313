@@ -17,7 +17,7 @@ else
     $lot_loc = $_GET['lot_loc'];
     $lot_pass = $_GET['lot_pass'];
 
-    $query = 'SELECT COUNT(info_id) AS cap FROM parking_info WHERE lot_id=:lot_id AND end_at_date=NULL' ;
+    $query = 'SELECT COUNT(info_id) AS cap FROM parking_info WHERE lot_id=:lot_id AND end_at_date IS NULL' ;
     $stmt = $db->prepare($query);
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
