@@ -8,7 +8,7 @@ function change(x) {
         doc.innerHTML = "<option value='Admin'>North</option>"; 
     } else if (x === "Kimball") {
         doc.innerHTML = "<option value='North'>North</option><option value='Admin'>Admin</option>";
-    } else if (x === "I-Center") {
-        doc.innerHTML = "<option value='North'>North</option>";
-    };
+    } //else if (x === "I-Center") {
+        //doc.innerHTML = "<option value='North'>North</option>";
+    //};
 };
