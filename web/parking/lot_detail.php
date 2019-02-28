@@ -22,20 +22,12 @@ else
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
     $lot = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    /*
-    $query = 'SELECT end_at_date, end_at_time FROM parking_info WHERE lot_id=:lot_id AND end_at_date';
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
-    $stmt->execute();
-    $lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    */
+
     $query = 'SELECT capacity FROM parking_lot WHERE lot_id=:lot_id';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
     $cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    var_dump($cap);
-    var_dump($cap[0]['capacity']);
 ?>
 
 <!DOCTYPE html>
@@ -64,11 +56,10 @@ else
         </nav>      
         <div class="col-md-4 col-md-offset-4">
             <div class="my_layout">  
-                <h2><?php echo "Spots available at $lot_loc - $lot_pass parking"; ?></h2>
                 <?php 
                     $x = $lot[0]['cap'];
                     $y = $cap[0]['capacity'];
-                    echo "$x / $y";
+                    echo "<h4>$x / $y spots occupied at $lot_loc - $lot_pass parking</h4>";
                 ?>
             </div>
         </div>
