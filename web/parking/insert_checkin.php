@@ -16,19 +16,6 @@ $db = get_db();
 $lot = htmlspecialchars($_POST['plot']);
 $pass = htmlspecialchars($_POST['ppass']);
 
-$query = 'SELECT COUNT(info_id) AS cap FROM parking_info WHERE lot_id=:lot_id AND end_at_date IS NULL' ;
-$stmt = $db->prepare($query);
-$stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
-$stmt->execute();
-$lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-$query = 'SELECT capacity FROM parking_lot WHERE lot_id=:lot_id';
-$stmt = $db->prepare($query);
-$stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
-$stmt->execute();
-$cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
 $query1 = 'SELECT lot_id FROM parking_lot WHERE lot_location=:lot AND parking_pass=:pass';
 $stmt = $db->prepare($query1);
 $stmt->bindValue(':lot', $lot, PDO::PARAM_STR);
@@ -41,6 +28,18 @@ $stmt = $db->prepare($query2);
 $stmt->bindValue(':username', $username, PDO::PARAM_STR);
 $stmt->execute();
 $member_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$query = 'SELECT COUNT(info_id) AS cap FROM parking_info WHERE lot_id=:lot_id AND end_at_date IS NULL' ;
+$stmt = $db->prepare($query);
+$stmt->bindValue(':lot_id', $lot_id[0]['lot_id'], PDO::PARAM_INT);
+$stmt->execute();
+$lots = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$query = 'SELECT capacity FROM parking_lot WHERE lot_id=:lot_id';
+$stmt = $db->prepare($query);
+$stmt->bindValue(':lot_id', $lot_id[0]['lot_id'], PDO::PARAM_INT);
+$stmt->execute();
+$cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if ($lots[0]['cap'] <= $cap[0]['capacity']) {
 	$query3 = 'INSERT INTO parking_info(start_at_date, start_at_time, lot_id, member_id) VALUES(CURRENT_DATE, CURRENT_TIME, :lot_id, :member_id)';
