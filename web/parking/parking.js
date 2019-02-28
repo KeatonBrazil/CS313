@@ -5,24 +5,24 @@ function change(x) {
     var doca = document.getElementById("admin");
     console.log(x);
     if (x === "Taylor") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'none';
+        docn.innerHTML = 'North';
+        docs.innerHTML = '';
+        doca.innerHTML = '';
     } else if (x === "STC") {
-        docn.style.display = 'none';
-        docs.style.display = 'inline';
-        doca.style.display = 'none';
+        docn.innerHTML = '';
+        docs.innerHTML = 'South';
+        doca.innerHTML = '';
     } else if (x === "Snow") {
-        docn.style.display = 'none';
-        docs.style.display = 'none';
-        doca.style.display = 'inline';
+        docn.innerHTML = '';
+        docs.innerHTML = '';
+        doca.innerHTML = 'Admin';
     } else if (x === "Kimball") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'inline';
+        docn.innerHTML = 'North';
+        docs.innerHTML = '';
+        doca.innerHTML = 'Admin';
     } else if (x === "I-Center") {
-        docn.style.display = 'inline';
-        docs.style.display = 'none';
-        doca.style.display = 'none';
+        docn.innerHTML = 'North';
+        docs.docs.innerHTML = '';
+        doca.docs.innerHTML = '';
     };
 };
