@@ -34,6 +34,7 @@ else
     $stmt->bindValue(':lot_id', $lot_id, PDO::PARAM_INT);
     $stmt->execute();
     $cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    var_dump($cap);
 ?>
 
 <!DOCTYPE html>
