@@ -35,7 +35,7 @@ else
     $stmt->execute();
     $cap = $stmt->fetchAll(PDO::FETCH_ASSOC);
     var_dump($cap);
-    var_dump($cap['capacity']);
+    var_dump($cap[0]['capacity']);
 ?>
 
 <!DOCTYPE html>
