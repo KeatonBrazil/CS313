@@ -10,8 +10,7 @@ else
 	header("Location: login_page.php");
 	die();
 }
-$lot_id = $_GET['lot_id'];
-var_dump($lot_id);
+
 
 require_once("parking_db.php");
 $db = get_db();
